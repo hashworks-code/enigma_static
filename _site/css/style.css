@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'rajdhaniRegular';
+  src: url("../assets/fonts/Rajdhani-Regular.ttf"); }
+@font-face {
+  font-family: 'rajdhaniSemoBold';
+  src: url("../assets/fonts/Rajdhani-SemiBold.ttf"); }
+@font-face {
+  font-family: 'rajdhaniMedium';
+  src: url("../assets/fonts/Rajdhani-Medium.ttf"); }
+@font-face {
+  font-family: 'rajdhaniLight';
+  src: url("../assets/fonts/Rajdhani-Light.ttf"); }
+@font-face {
+  font-family: 'rajdhaniBold';
+  src: url("../assets/fonts/Rajdhani-Bold.ttf"); }
+@font-face {
+  font-family: 'PTSansRegular';
+  src: url("../assets/fonts/PT_Sans-Web-Regular.ttf"); }
+@font-face {
+  font-family: 'PTSansBold';
+  src: url("../assets/fonts/PT_Sans-Web-Bold.ttf"); }
+.noPadding {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+.fullHeight {
+  height: 100%; }
+
+body {
+  margin: 0px; }
+  body a {
+    text-decoration: none;
+    color: #4a4a4a; }
+  body body {
+    margin: 0px; }
+  @media only screen and (min-width: 768px) {
+    body .engima {
+      display: flex;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+      height: 64px; }
+      body .engima--logo {
+        margin-left: 21px; }
+      body .engima--list {
+        position: absolute;
+        right: 0px;
+        padding: 16px 21px 16px;
+        display: inline-flex; }
+        body .engima--list--header {
+          display: inline-block;
+          margin-top: 4px; }
+        body .engima--list a {
+          font-size: 18px;
+          color: #737373;
+          text-decoration: none;
+          font-family: 'PTSans-Regular';
+          margin-right: 24px; }
+        body .engima--list button {
+          display: inline-block;
+          width: 159px;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #ffffff;
+          padding: 5px 0px 8px;
+          background-image: linear-gradient(to left, #f38181, #f8b686);
+          border: none;
+          outline: none;
+          border-radius: 4px; }
+      body .engima--home {
+        cursor: pointer; } }
+  @media only screen and (min-width: 1367px) {
+    body .engima {
+      height: 80px; }
+      body .engima--logo {
+        margin-left: 50px; }
+      body .engima--list {
+        right: 0px;
+        padding: 16px 48px 16px; }
+        body .engima--list--header {
+          margin-top: 12px; }
+        body .engima--list a {
+          font-size: 20px; }
+        body .engima--list button {
+          width: 192px;
+          font-size: 16px;
+          padding: 12px 0px 15px; } }
+  @media only screen and (min-width: 320px) {
+    body .footer {
+      background-color: #000000; }
+      body .footer__logo {
+        width: 150px;
+        margin: 0 auto; }
+        body .footer__logo img {
+          margin: 26px 0px 20px; }
+      body .footer p {
+        font-family: 'Rajdhani-Medium';
+        font-size: 28px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff; }
+      body .footer__list {
+        width: 110px;
+        margin: 0 auto; }
+      body .footer__logo1 {
+        width: 21px;
+        height: 17px;
+        margin-right: 26px; }
+      body .footer__logo2 {
+        width: 18px;
+        height: 17px;
+        margin-right: 26px; }
+      body .footer__logo3 {
+        width: 9px;
+        height: 17px; }
+      body .footer h2 {
+        width: 190px;
+        height: 18px;
+        font-family: PTSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 auto;
+        padding: 24px 0px; }
+      body .footer__copyright {
+        border-top: solid 1px #2f2f2f;
+        margin: 23px 18px 0px 19px; } }
+
+.home p {
+  font-family: 'PTSansRegular';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #737373;
+  margin: 0px auto;
+  width: 240px; }
+.home h2 {
+  font-size: 28px;
+  color: #393939;
+  font-family: 'rajdhaniBold';
+  text-align: center;
+  padding: 42px 0px 14px; }
+.home h1 {
+  font-family: 'rajdhaniMedium';
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #393939;
+  padding: 32px 0px 15px; }
+.home__img {
+  height: 400px;
+  background-image: url("../assets/image/home/banner-01.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .home__img p {
+    width: 291px; }
+.home__configure--image {
+  height: 300px;
+  background-image: url("../assets/image/home/configure-2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+.home__monitor--image {
+  height: 300px;
+  background-image: url("../assets/image/home/monitor3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+.home__resolve--image {
+  height: 300px;
+  background-image: url("../assets/image/home/flag4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+.home__feature {
+  background-color: #fafafa; }
+  .home__feature--learn {
+    font-family: 'PTSansRegular';
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #393939;
+    width: 86px;
+    border-radius: 4px;
+    border: solid 2px #38454f;
+    margin: 20px auto; }
+.home__notisfication p {
+  padding-top: 52px;
+  width: 503px !important; }
+.home__notisfication button {
+  display: inline-block;
+  width: 128px;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 3px 0px 5px;
+  background-image: linear-gradient(to left, #f38181, #f8b686);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 44px auto 52px; }
+.home__footerimg {
+  height: 200px;
+  background-image: url("../assets/image/home/footer-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+@media only screen and (min-width: 768px) {
+  .home .row {
+    margin: 0px 34px; }
+  .home p {
+    width: 240px;
+    text-align: left; }
+  .home h2 {
+    padding: 121px 0px 14px; }
+  .home h1 {
+    padding: 32px 0px 12px; }
+  .home__img {
+    height: 440px; }
+    .home__img p {
+      width: 503px; }
+  .home__configure--image {
+    height: 250px;
+    margin-top: 60px; }
+  .home__monitor--image {
+    height: 250px;
+    margin-top: 60px; }
+  .home__resolve--image {
+    height: 250px;
+    margin-top: 60px; }
+  .home__feature--learn {
+    font-family: 'PTSansRegular';
+    font-size: 12px;
+    width: 86px;
+    margin: 20px auto; }
+  .home__notisfication button {
+    width: 166px;
+    font-size: 14px;
+    padding: 3px 0px 5px;
+    margin: 32px auto 37px; }
+  .home__footerimg {
+    height: 200px; } }
+@media only screen and (min-width: 1024px) {
+  .home .row {
+    margin: 0px 47px; }
+  .home p {
+    font-size: 16px;
+    width: 320px; }
+  .home h2 {
+    padding: 171px 0px 14px; }
+  .home h1 {
+    font-size: 44px;
+    padding: 53px 0px 15px; }
+  .home__img {
+    height: 576px; }
+    .home__img p {
+      width: 503px;
+      font-size: 16px; }
+  .home__configure--image {
+    height: 250px;
+    margin-top: 75px; }
+  .home__monitor--image {
+    height: 250px;
+    margin-top: 75px; }
+  .home__resolve--image {
+    height: 250px;
+    margin-top: 75px; }
+  .home__feature h2 {
+    padding: 111px 0px 14px; }
+  .home__feature--learn {
+    font-family: 'PTSansRegular';
+    font-size: 12px;
+    width: 86px;
+    margin: 20px auto; }
+  .home__notisfication button {
+    width: 166px;
+    font-size: 14px;
+    padding: 3px 0px 5px;
+    margin: 32px auto 37px; }
+  .home__footerimg {
+    height: 200px; } }

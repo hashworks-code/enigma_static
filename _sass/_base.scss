@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'rajdhaniRegular';
+    src: url('../assets/fonts/Rajdhani-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'rajdhaniSemoBold';
+    src: url('../assets/fonts/Rajdhani-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: 'rajdhaniMedium';
+    src: url('../assets/fonts/Rajdhani-Medium.ttf');
+  } 
+  @font-face {
+    font-family: 'rajdhaniLight';
+    src: url('../assets/fonts/Rajdhani-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'rajdhaniBold';
+    src: url('../assets/fonts/Rajdhani-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'PTSansRegular';
+    src: url('../assets/fonts/PT_Sans-Web-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'PTSansBold';
+    src: url('../assets/fonts/PT_Sans-Web-Bold.ttf');
+  }
+
+.noPadding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.fullHeight {
+  height: 100%;
+}
