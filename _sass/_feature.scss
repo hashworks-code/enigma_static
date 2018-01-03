@@ -1,0 +1,629 @@
+.feature{
+    h2{
+        font-family: 'rajdhaniMedium';
+        font-size: 32px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #393939;
+    }
+    h1{
+        font-size: 28px;
+        color: #393939;
+        font-family: 'rajdhaniBold';
+        text-align: center;
+    }
+    p{
+        font-family: 'PTSansRegular';
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: center;
+        color: #737373;
+    }
+    &__image{
+        height:400px;
+        background-image: url("../assets/image/feature/feature-page.jpg");
+        background-size: cover;
+        background-position: 25%;
+        background-repeat: no-repeat;
+        h2{
+            padding: 32px 0px 8px;
+        }
+    }
+    &__fast{
+        // width: 288px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fafafa;
+        height:690px;
+        .row{
+            width: 288px;
+            margin: 0 auto;
+            position: relative;
+        }
+        h1{
+            padding: 46px 0px 0px;
+        }
+        p{
+            margin: 0 auto;  
+        }
+        &--img{
+            margin: 35px 0px 23px;
+        }
+        &--fast4{
+            position: absolute;
+            bottom: -122px;
+            left: 105px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+            width: 71px;
+            height: 71px;
+            padding: 20px 0px 0px 8px;
+        }
+    }
+    &__choose{
+        h1{
+            width: 160px;
+           margin: 0px auto;
+           padding: 58px 0px 17px;
+        }
+        h2{
+            font-size: 18px;
+            font-family: 'rajdhaniSemiBold';
+        }
+        p{
+            width: 243px;
+            margin: 0 auto;
+            padding: 22px 0px 74px;
+        }
+    }
+    &__extreme{
+        background-color: #fafafa;
+        height: 1530px;
+        .row{
+            width: 272px;
+            margin: 0 auto;
+            position: relative;
+        }
+        h3{
+            font-family: 'PTSansRegular';
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: center;
+            color: #737373;
+            width: 216px;
+            padding-bottom: 17px;
+            margin: 0 auto;
+        }
+        h1{
+            padding: 57px 0px 10px ;
+            margin: 0 auto;
+        }
+        h2{
+            font-family: 'rajdhaniSemiBold';
+            padding: 32px 0px 17px;
+            width: 271px;
+            font-size: 18px;
+        }
+        p{
+            width: 271px;
+        }
+
+        &--ext1{
+            position: absolute;
+            top: -38px;
+            left: 105px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+            width: 71px;
+            height: 71px;
+            padding: 19px 0px 0px 18px;
+        }
+        &--ext2{
+            position: absolute;
+            bottom: -127px;
+            left: 105px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+            width: 71px;
+            height: 71px;
+            padding: 14px 0px 0px 18px;
+        }
+    }
+    &__enterprise{
+        h1{
+            width: 221px;
+           margin: 0px auto;
+           padding: 58px 0px 17px;
+        }
+        h2{
+            font-size: 18px;
+            font-family: 'rajdhaniSemiBold';
+        }
+        p{
+            width: 271px;
+            margin: 0 auto;
+            padding: 22px 0px 74px;
+        }
+    }
+    &__code{
+        // width: 288px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fafafa;
+      
+        .row{
+            width: 288px;
+            margin: 0 auto;
+            position: relative;
+        }
+        h1{
+            width: 100%;
+            padding: 58px 0px 17px;
+        }
+        h2{
+            font-size: 18px;
+            font-family: 'rajdhaniSemiBold';
+            padding-top: 23px;
+        }
+        p{
+            width: 216px;
+            margin: 0 auto;
+            padding: 22px 0px 32px;
+        }
+        
+        &--code4{
+            position: absolute;
+            top: -35px;
+            left: 105px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+            width: 71px;
+            height: 71px;
+            padding: 15px 0px 0px 8px;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {  
+    .feature{
+        h2{
+            font-size: 32px;
+        }
+        h1{
+            font-size: 28px;
+        }
+        p{
+            font-size: 14px;
+        }
+        &__image{
+            height:400px;
+            background-size: cover;
+            background-position: 25%;
+            h2{
+                padding: 32px 0px 8px;
+                text-align: left;
+                padding-left: 34px;
+            }
+            p{
+                text-align: left;
+                padding-left: 34px;
+            }
+        }
+        &__fast{
+            height: 374px;
+            .row{
+                width: 700px;
+            }
+            h1{
+                padding: 48px 0px 57px;
+            }
+            &--img{
+                margin: 0px 0px 23px;
+            }
+            &--fast4{
+                bottom: -127px;
+                left: 310px;
+                padding: 19px 0px 0px 7px;
+            }
+        }
+        &__choose{
+            h1{
+                width:310px;
+               margin: 0px auto;
+               padding: 47px 0px 17px;
+            }
+            h2{
+                font-size: 18px;
+                font-family: 'rajdhaniSemiBold';
+            }
+            p{
+                width: 552px;
+                margin: 0 auto;
+                padding: 6px 0px 76px;
+            }
+        }
+        &__extreme{
+            background-color: #fafafa;
+            height: 795px;
+            .row{
+                width: 596px;
+                margin: 0 auto;
+                position: relative;
+            }
+            h3{
+               
+                font-size: 16px;
+                width: 100%;
+                padding-bottom: 17px;
+                margin: 0 auto;
+            }
+            h1{
+                width: 100%;
+                padding: 50px 0px 17px;
+                margin: 0 auto;
+                
+            }
+            h2{
+                padding: 32px 0px 17px;
+                width: 100%;
+                font-size: 18px;
+                text-align: left
+            }
+            p{
+                width: 300px;
+                text-align: left;
+            }
+    
+            &--ext1{
+                position: absolute;
+                top: -38px;
+                left: 252px;
+                padding: 19px 0px 0px 18px;
+            }
+            &--ext2{
+                position: absolute;
+                bottom: -110px;
+                left: 252px;
+        
+                padding: 14px 0px 0px 18px;
+            }
+        }
+        &__enterprise{
+            h1{
+                width: 221px;
+               margin: 0px auto;
+               padding: 58px 0px 17px;
+            }
+            h2{
+                font-size: 18px;
+                font-family: 'rajdhaniSemiBold';
+            }
+            p{
+                width: 556px;
+                margin: 0 auto;
+                padding: 12px 0px 91px;
+            }
+        }
+        &__code{
+            // width: 288px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fafafa;
+          
+            .row{
+                width:703px;
+                margin: 0 auto;
+                position: relative;
+            }
+            h1{
+                width: 100%;
+                padding: 50px 0px 45px;
+            }
+            h2{
+                font-size: 18px;
+                font-family: 'rajdhaniSemiBold';
+                padding-top: 23px;
+            }
+            p{
+                width: 210px;
+                margin: 0 auto;
+                padding: 22px 0px 71px;
+            }
+            
+            &--code4{
+                position: absolute;
+                top: -35px;
+                left: 310px;
+                padding: 15px 0px 0px 8px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width:1025px) {  
+    .feature{
+        h2{
+            font-size: 32px;
+        }
+        h1{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+        }
+        &__image{
+            height:440px;
+            background-size: cover;
+            background-position: 25%;
+            h2{
+                padding: 41px 0px 10px;
+                text-align: left;
+                padding-left: 47px;
+                font-size: 44px;
+            }
+            p{
+                text-align: left;
+                padding-left: 47px;
+            }
+        }
+        &__fast{
+            height: 392px;
+            .row{
+                width:838px;
+            }
+            h1{
+                padding: 58px 0px 57px;
+            }
+            &--fast4{
+                left: 388px;
+            }
+        }
+        &__choose{
+            h1{
+                padding: 56px 0px 23px;
+            }
+            h2{
+                font-size: 18px;
+            }
+            p{
+                width: 793px;
+                padding: 18px 0px 82px;
+            }
+        }
+        &__extreme{
+            height: 733px;
+            .row{
+                width: 770px;
+            }
+            h3{
+                font-size: 16px;
+                width: 100%;
+                padding-bottom: 17px;
+                margin: 0 auto;
+            }
+
+            h2{
+               
+                font-size: 18px;
+               
+            }
+            p{
+                width: 370px;
+                text-align: left;
+                font-size: 14px;
+            }
+    
+            &--ext1{
+                position: absolute;
+                top: -38px;
+                left: 345px;
+                padding: 19px 0px 0px 18px;
+            }
+            &--ext2{
+                position: absolute;
+                bottom: -110px;
+                left: 354px;
+        
+                padding: 14px 0px 0px 18px;
+            }
+        }
+        &__enterprise{
+            h1{
+                padding: 58px 0px 23px;
+            }
+            h2{
+                font-size: 18px;
+                font-family: 'rajdhaniSemiBold';
+            }
+            p{
+                width:791px;
+                margin: 0 auto;
+                padding: 19px 0px 76px;
+            }
+        }
+        &__code{
+            // width: 288px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fafafa;
+          
+            .row{
+                width:792px;
+                margin: 0 auto;
+                position: relative;
+            }
+            h1{
+                width: 100%;
+                padding: 50px 0px 45px;
+            }
+            h2{
+                font-size: 18px;
+                font-family: 'rajdhaniSemiBold';
+                padding-top: 23px;
+            }
+            p{
+                width: 210px;
+                margin: 0 auto;
+                padding: 22px 0px 71px;
+            }
+            
+            &--code4{
+                position: absolute;
+                top: -35px;
+                left: 360px;
+                padding: 15px 0px 0px 8px;
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width:1367px) {  
+    .feature{
+        h2{
+            font-size: 32px;
+        }
+        h1{
+            font-size: 32px;
+        }
+        p{
+            font-size: 16px;
+        }
+        &__image{
+            height:540px;
+            background-size: cover;
+            background-position: 25%;
+            h2{
+                padding: 70px 0px 10px;
+                padding-left: 152px;
+                font-size: 52px;
+            }
+            p{
+                padding-left: 152px;
+                font-size: 18px;
+            }
+        }
+        &__fast{
+            height: 392px;
+            .row{
+                width:1255px;
+            }
+            h1{
+                padding: 58px 0px 57px;
+            }
+            &--fast4{
+                left:590px;
+            }
+        }
+        &__choose{
+            h1{
+                padding: 56px 0px 23px;
+                width: 100%;
+            }
+            h2{
+                font-size: 18px;
+            }
+            p{
+                width: 793px;
+                padding: 18px 0px 82px;
+            }
+        }
+        &__extreme{
+            height: 955px;
+            .row{
+                width: 890px;
+            }
+            h3{
+                font-size: 16px;
+            }
+
+            h2{
+                font-size: 20px;
+            }
+            p{
+                width: 419px;
+                font-size: 18px;
+            }
+    
+            &--ext1{
+                position: absolute;
+                top: -38px;
+                left: 405px;
+                padding: 19px 0px 0px 18px;
+            }
+            &--ext2{
+                position: absolute;
+                bottom: -165px;
+                left: 405px;
+        
+                padding: 14px 0px 0px 18px;
+            }
+        }
+        &__enterprise{
+            h1{
+                padding: 58px 0px 23px;
+                width: 100%;
+            }
+            h2{
+                font-size: 18px;
+                font-family: 'rajdhaniSemiBold';
+            }
+            p{
+                width: 864px;
+            }
+        }
+        &__code{
+            // width: 288px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fafafa;
+          
+            .row{
+                width:890px;
+                margin: 0 auto;
+                position: relative;
+            }
+            h1{
+                width: 100%;
+                padding: 50px 0px 45px;
+            }
+            h2{
+                font-size: 20px;
+                font-family: 'rajdhaniSemiBold';
+                padding-top: 23px;
+            }
+            p{
+                width: 250px;
+                margin: 0 auto;
+                padding: 22px 0px 71px;
+                font-size: 18px;
+            }
+            
+            &--code4{
+                position: absolute;
+                top: -35px;
+                left: 400px;
+                padding: 15px 0px 0px 8px;
+            }
+        }
+    }
+    
+}

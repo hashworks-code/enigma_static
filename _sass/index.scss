@@ -1,6 +1,10 @@
 
     
     .home{
+        .homeAlligment{
+            width: 310px;
+            margin: 0 auto;
+        }
 
         p{
             font-family: 'PTSansRegular';
@@ -12,7 +16,7 @@
             letter-spacing: normal;
             text-align: center;
             color: #737373;
-            margin: 0px auto;
+            margin: 0px auto 16px;
             width: 240px;
           }
           h2{
@@ -20,7 +24,7 @@
             color: #393939;
             font-family: 'rajdhaniBold';
             text-align: center;
-            padding: 42px 0px 14px;
+            padding: 34px 0px 14px;
         } 
         h1{
             font-family: 'rajdhaniMedium';
@@ -37,7 +41,8 @@
         &__img{
             height:400px;
             background-image: url("../assets/image/home/banner-01.jpg");
-            background-size: 100% 100%;
+            background-size: cover;
+            background-position: 25%;
             background-repeat: no-repeat;
          
           p{
@@ -110,12 +115,12 @@
                 border-radius: 4px;
                 display: flex;
                 justify-content: center;
-                margin: 44px auto 52px;
+                margin: 44px auto 0px;
             
               }
         }
         &__footerimg{
-            height:200px;
+            height:317px;
             background-image: url("../assets/image/home/footer-1.jpg");
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -124,41 +129,53 @@
     
     @media only screen and (min-width:768px) {    
     .home{
-        .row{
-            margin: 0px 34px;
+        .homeAlligment{
+            width: 700px;
+            margin: 0 auto;
         }
+    
                 p{
                     width: 240px;
                     text-align: left;
+                    margin: 0px;
                   }
                   h2{
-                    padding: 121px 0px 14px;
+                    padding: 94px 0px 14px;
+                    // width: 240px;
+                    // margin: 0 auto;
+                    text-align: left;
                 } 
                 h1{
                     padding: 32px 0px 12px;
                   }  
                 &__img{
-                    height:440px;     
+                    height:440px; 
+                    background-position: 100% 100%;    
                   p{
                     width: 503px;
+                    margin: 0 auto;
+                    text-align: center;
                   }
                 }
                 &__configure{
                     &--image{
-                        height:250px;
-                        margin-top: 60px;
+                        height:303px;
+                        margin-top: 54px;
                     }   
                 }
                 &__monitor{
+                    .last-sm{
+                        padding-left: 80px;
+                    }
                     &--image{
-                        height:250px;
-                        margin-top: 60px;
+                        height:303px;
+                        margin-top: 54px;
                     }   
                 }
                 &__resolve{
                     &--image{
-                        height:250px;
-                        margin-top: 60px;
+                        height:303px;
+                        margin: 54px 0px;
 
                     }   
                 }
@@ -174,32 +191,36 @@
                 &__notisfication{
                     p{
                         width: 503px !important;
+                        margin: 0px auto;
+                        text-align: center;
                     }
                     button{
                         width: 166px;
                         font-size: 14px;
-                        padding: 3px 0px 5px;
-                        margin: 32px auto 37px;
+                        padding: 5px 0px 5px;
+                        margin: 32px auto 0px;
                     
                       }
                 }
                 &__footerimg{
-                    height:300px;
+                    height:317px;
                 }
             }
 
     }
     @media only screen and (min-width:1024px) {    
         .home{
-            .row{
-                margin: 0px 47px;
+            .homeAlligment{
+                width:880px;
+                margin: 0 auto;
             }
+          
                     p{
                         font-size: 16px;
                         width: 320px;
                       }
                       h2{
-                        padding: 171px 0px 14px;
+                        padding: 156px 0px 14px;
                     } 
                     h1{
                         font-size: 44px;
@@ -210,24 +231,25 @@
                       p{
                         width: 503px;
                         font-size: 16px;
+                        text-align: center;
                       }
                     }
                     &__configure{
                         &--image{
-                            height:250px;
-                            margin-top: 75px;
+                            height: 392px;
+                            margin-top: 58px;
                         }   
                     }
                     &__monitor{
                         &--image{
-                            height:250px;
-                            margin-top: 75px;
+                            height: 392px;
+                            margin-top: 58px;
                         }   
                     }
                     &__resolve{
                         &--image{
-                            height:250px;
-                            margin-top: 75px;
+                            height: 392px;
+                            margin: 58px 0px 69px;
     
                         }   
                     }
@@ -246,31 +268,30 @@
                     }
             
                     &__notisfication{
+                        p{
+                            width: 615px !important;
+                            text-align: center;
+                        }
                         button{
-                            width: 166px;
-                            font-size: 14px;
-                            padding: 3px 0px 5px;
-                            margin: 32px auto 37px;
-                        
+                            padding: 8px 0px 8px;
                           }
                     }
-                    &__footerimg{
-                        height:340px;
-                    }
+                  
                 }
     
         }
         @media only screen and (min-width:1367px) {    
             .home{
-                .row{
-                    margin: 0px 165px;
+                .homeAlligment{
+                    width: 1108px;
+                    margin: 0 auto;
                 }
                         p{
                             font-size: 18px;
                             width: 360px;
                           }
                           h2{
-                            padding: 235px 0px 14px;
+                            padding: 224px 0px 14px;
                             font-size: 32px;
                         } 
                         h1{
@@ -286,21 +307,23 @@
                         }
                         &__configure{
                             &--image{
-                                height:250px;
-                                margin-top: 75px;
+                                height: 481px;
+                                margin-top: 62px;
                             }   
                         }
                         &__monitor{
+                            .last-sm{
+                                padding-left: 107px;
+                            }
                             &--image{
-                                height:250px;
-                                margin-top: 75px;
+                                height: 481px;
+                                margin-top: 62px;
                             }   
                         }
                         &__resolve{
                             &--image{
-                                height:250px;
-                                margin-top: 75px;
-        
+                                height: 481px;
+                                margin: 62px 0px 106px;
                             }   
                         }
                         &__feature{
@@ -319,16 +342,17 @@
                         }
                 
                         &__notisfication{
+                            p{
+                                width: 673px !important;
+                                text-align: center;
+                            }
                             button{
                                 width: 195px;
                                 font-size: 16px;
-                                padding: 12px 0px 15px;
-                                margin: 32px auto 37px;
+                                padding: 15px 0px 15px;
+                                margin: 32px auto 0px;
                             
                               }
-                        }
-                        &__footerimg{
-                            height:487px;
                         }
                     }
         
