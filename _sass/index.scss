@@ -92,39 +92,7 @@
            } 
         }
 
-        &__notisfication{
-            p{
-            padding-top: 52px;
 
-            }
-            button{
-                display: inline-block;
-                width: 128px;
-                font-size: 12px;
-                font-weight: 600;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: #ffffff;
-                padding: 3px 0px 5px;
-                background-image: linear-gradient(to left, #f38181, #f8b686);
-                border: none;
-                outline: none;
-                border-radius: 4px;
-                display: flex;
-                justify-content: center;
-                margin: 44px auto 0px;
-            
-              }
-        }
-        &__footerimg{
-            height:317px;
-            background-image: url("../assets/image/home/footer-1.jpg");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
     }
     
     @media only screen and (min-width:768px) {    
@@ -188,23 +156,7 @@
                    } 
                 }
         
-                &__notisfication{
-                    p{
-                        width: 503px !important;
-                        margin: 0px auto;
-                        text-align: center;
-                    }
-                    button{
-                        width: 166px;
-                        font-size: 14px;
-                        padding: 5px 0px 5px;
-                        margin: 32px auto 0px;
-                    
-                      }
-                }
-                &__footerimg{
-                    height:317px;
-                }
+              
             }
 
     }
@@ -267,15 +219,7 @@
                        } 
                     }
             
-                    &__notisfication{
-                        p{
-                            width: 615px !important;
-                            text-align: center;
-                        }
-                        button{
-                            padding: 8px 0px 8px;
-                          }
-                    }
+                
                   
                 }
     
@@ -341,19 +285,7 @@
                            } 
                         }
                 
-                        &__notisfication{
-                            p{
-                                width: 673px !important;
-                                text-align: center;
-                            }
-                            button{
-                                width: 195px;
-                                font-size: 16px;
-                                padding: 15px 0px 15px;
-                                margin: 32px auto 0px;
-                            
-                              }
-                        }
+                      
                     }
         
             }
