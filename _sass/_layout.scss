@@ -21,7 +21,16 @@ body{
    display: none;
     }
   }
+.mobile-nav._button {
 
+  font-weight: 700;
+  color: #cbc8c7;
+  font-size: 12px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 22px;
+  cursor: pointer;
+}
   
  //footerimage
  .request{
