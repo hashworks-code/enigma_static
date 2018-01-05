@@ -57,9 +57,7 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
-            h2{
-                display: flex;
-            }
+         
         }
         &__monitor{
             &--image{
@@ -68,9 +66,7 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
-            h2{
-                display: flex;
-            }
+          
         }
         &__resolve{
             &--image{
@@ -79,9 +75,7 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
-            h2{
-                display: flex;
-            }
+           
         }
         &__feature{
             background-color: #fafafa;
@@ -216,7 +210,10 @@
                     &--image{
                         height:303px;
                         margin-top: 54px;
-                    }   
+                    }  
+                    h2{
+                        display: flex;
+                    } 
                 }
                 &__monitor{
                     .last-sm{
@@ -226,6 +223,9 @@
                         height:303px;
                         margin-top: 54px;
                     }   
+                    h2{
+                        display: flex;
+                    }
                 }
                 &__resolve{
                     &--image{
@@ -233,6 +233,9 @@
                         margin: 54px 0px;
 
                     }   
+                    h2{
+                        display: flex;
+                    }
                 }
                
                 &__feature{
