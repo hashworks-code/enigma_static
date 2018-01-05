@@ -28,23 +28,23 @@
            
 <!-- popup -->
 <div  id="popup" >
-  <div class="modal contact">
+  <div class="modal contact" id="bgImg">
      <div class="contact__close" id="close_popup"><img  src="../assets/image/cross.svg"></div>
-      <div class="contact__form">
+      <div class="contact__form" id="pop1">
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
         <input type="number" placeholder="Phone">
         <textarea placeholder="Message"></textarea>
-        <button class="send">Send</button>
+        <button class="send" type="button" onClick="submitContact('success')">Send</button>
       </div>  
-     
-  
-  </div>
+      <div class="contact__thanku" id="imga">
+          <h1>Thank you!</h1>
+          <h2>We will get back to you.</h2>
+        </div>
+      </div>
     </div>
+  
 <!-- end popup -->
-
-
-
 
            <!-- mobile view -->
             <div class="engima__toggle">     
@@ -61,7 +61,7 @@
                                     <a href="/feature" class="engima--home">Features</a>
                                     <a href="/blog" class="engima--home">Blogs</a>
                             </div>
-                            <button>Request for Demo</button>
+                            <button href="#popup" id="open_popup">Request for Demo</button>
                             <a href="/index"><img class=""src="../assets/image/group.svg" alt="hashlogo"></a>
                     </div>
                         </div>
@@ -79,6 +79,9 @@
         <script>
           $("#open_popup").click(function(){
           $("#popup").css("display", "flex");
+          $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+        $("#pop1").show();
+        $("#imga").hide();
         });
       
        $("#close_popup").click(function(){
@@ -90,6 +93,14 @@
         $("#popup").css("display","none");
       }
     });
+
+   function submitContact(value) {
+      if(value === 'success') {
+        $("#bgImg").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+        $("#pop1").hide();
+        $("#imga").show();
+      }
+    }
      
       </script>
     

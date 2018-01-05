@@ -57,7 +57,10 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
-         
+            h2{
+                display: flex;
+                justify-content: center;
+              }
         }
         &__monitor{
             &--image{
@@ -66,7 +69,10 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
-          
+          h2{
+            display: flex;
+            justify-content: center;
+          }
         }
         &__resolve{
             &--image{
@@ -75,7 +81,10 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
-           
+            h2{
+                display: flex;
+                justify-content: center;
+              }
         }
         &__feature{
             background-color: #fafafa;
@@ -213,6 +222,7 @@
                     }  
                     h2{
                         display: flex;
+                        justify-content: baseline;
                     } 
                 }
                 &__monitor{
@@ -225,6 +235,7 @@
                     }   
                     h2{
                         display: flex;
+                        justify-content: baseline;
                     }
                 }
                 &__resolve{
@@ -235,6 +246,7 @@
                     }   
                     h2{
                         display: flex;
+                        justify-content: baseline;
                     }
                 }
                
