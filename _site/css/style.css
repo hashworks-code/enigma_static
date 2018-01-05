@@ -349,16 +349,22 @@ body {
   background-image: url("../assets/image/home/configure-2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
+.home__configure h2 {
+  display: flex; }
 .home__monitor--image {
   height: 300px;
   background-image: url("../assets/image/home/monitor3.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
+.home__monitor h2 {
+  display: flex; }
 .home__resolve--image {
   height: 300px;
   background-image: url("../assets/image/home/flag4.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
+.home__resolve h2 {
+  display: flex; }
 .home__feature {
   background-color: #fafafa;
   position: relative;
@@ -690,7 +696,8 @@ body {
     margin: 0 auto;
     position: relative; }
   .feature__fast h1 {
-    padding: 46px 0px 0px; }
+    padding: 46px 0px 0px;
+    display: inline-flex; }
   .feature__fast p {
     margin: 0 auto; }
   .feature__fast--img {

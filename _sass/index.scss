@@ -1,6 +1,7 @@
 
     
     .home{
+       
         .homeAlligment{
             width: 310px;
             margin: 0 auto;
@@ -56,6 +57,9 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
+            h2{
+                display: flex;
+            }
         }
         &__monitor{
             &--image{
@@ -64,6 +68,9 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
+            h2{
+                display: flex;
+            }
         }
         &__resolve{
             &--image{
@@ -72,6 +79,9 @@
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
             }   
+            h2{
+                display: flex;
+            }
         }
         &__feature{
             background-color: #fafafa;
