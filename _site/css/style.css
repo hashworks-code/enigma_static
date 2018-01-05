@@ -56,7 +56,7 @@ body {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s; }
-  body .modal-wrapper {
+  body .modal-wrapper1 {
     position: absolute;
     z-index: 9999;
     margin-left: -12em; }
@@ -106,6 +106,66 @@ body {
       display: none; }
     body .engima--home {
       cursor: pointer; }
+  body #popup {
+    position: fixed;
+    display: none;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; }
+    body #popup .modal {
+      position: relative;
+      width: 666px;
+      border-radius: 5px;
+      background-color: #e0e0e0; }
+    body #popup .contact {
+      height: 348px;
+      background-image: url("../assets/image/popup.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat; }
+      body #popup .contact__close {
+        position: absolute;
+        right: 14px;
+        font-size: 30px; }
+      body #popup .contact__form {
+        margin: 35px 0px 0px 36px; }
+        body #popup .contact__form input {
+          width: 240px;
+          height: 36px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px #e0e0e0;
+          display: block;
+          margin-bottom: 12px;
+          font-family: 'PTSansRegular';
+          font-size: 14px;
+          font-weight: normal;
+          color: #737373;
+          padding: 6px 0px 10px 11px;
+          outline: none; }
+        body #popup .contact__form textarea {
+          width: 240px;
+          min-height: 95px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px #e0e0e0;
+          outline: none;
+          padding: 6px 0px 10px 11px;
+          font-family: 'PTSansRegular'; }
+        body #popup .contact__form .send {
+          font-family: 'PTSansRegular';
+          width: 98px;
+          height: 32px;
+          background-color: #393939;
+          display: block;
+          border: navajowhite;
+          outline: none;
+          color: white;
+          margin: 16px 0px 35px 141px;
+          border-radius: 4px; }
   body .mobile-nav._button {
     font-weight: 700;
     color: #cbc8c7;

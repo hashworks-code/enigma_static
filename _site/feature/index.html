@@ -23,18 +23,38 @@
                             <a href="/feature" class="engima--home">Features</a>
                             <a href="/blog" class="engima--home">Blogs</a>
                     </div>
-                    <button>Request for Demo</button>
+                    <button href="#popup" id="open_popup">Request for Demo</button>
             </div>
            
+<!-- popup -->
+<div  id="popup" >
+  <div class="modal contact">
+     <div class="contact__close" id="close_popup"><img  src="../assets/image/cross.svg"></div>
+      <div class="contact__form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="number" placeholder="Phone">
+        <textarea placeholder="Message"></textarea>
+        <button class="send">Send</button>
+      </div>  
+     
+  
+  </div>
+    </div>
+<!-- end popup -->
+
+
+
+
            <!-- mobile view -->
             <div class="engima__toggle">     
-                      <div class="modal-toggle">  <img src="../assets/image/toggle.svg" alt="hashlogo"></div>
+                      <div class="modal-toggle1">  <img src="../assets/image/toggle.svg" alt="hashlogo"></div>
                     <div class="modal">
-                      <div class="modal-overlay modal-toggle"></div>
+                      <div class="modal-overlay modal-toggle1"></div>
                      
-                      <div class="modal-wrapper modal-transition">
+                      <div class="modal-wrapper1 modal-transition">
                         <div class="modal-header">
-                          <div class="modal-close modal-toggle">   <img  display="none" id="icon-close icon" src="../assets/image/cross.svg" alt="hashlogo"></div>
+                          <div class="modal-close modal-toggle1">   <img  display="none" id="icon-close icon" src="../assets/image/cross.svg" alt="hashlogo"></div>
                          
                           <div class="engima--list1">
                             <div class="engima--list1--header">
@@ -51,12 +71,27 @@
             </div>
         </header>
         <script>
-        // Quick & dirty toggle to demonstrate modal toggle behavior
-$('.modal-toggle').on('click', function(e) {
-  e.preventDefault();
-  $('.modal').toggleClass('is-visible');
-});
+            $('.modal-toggle1').on('click', function(e) {
+              e.preventDefault();
+              $('.modal').toggleClass('is-visible');
+            });
         </script>
+        <script>
+          $("#open_popup").click(function(){
+          $("#popup").css("display", "flex");
+        });
+      
+       $("#close_popup").click(function(){
+          $("#popup").css("display", "none");
+        }); 
+     
+    $('body').click(function(e){
+      if(e.target.style[0] == "display"){
+        $("#popup").css("display","none");
+      }
+    });
+     
+      </script>
     
     </body>
   
