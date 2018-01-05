@@ -24,10 +24,30 @@
                             <a href="/blog" class="engima--home">Blogs</a>
                     </div>
                     <button>Request for Demo</button>
-               
+            </div>
+            <div class="engima__toggle">     
+                      <div class="modal-toggle">  <img src="../assets/image/toggle.svg" alt="hashlogo"></div>
+                    <div class="modal">
+                      <div class="modal-overlay modal-toggle"></div>
+                      <div class="modal-wrapper modal-transition">
+                        <div class="modal-header">
+                          <div class="modal-close modal-toggle">   <img  display="none" id="icon-close icon" src="../assets/image/cross.svg" alt="hashlogo"></div>
+                         
+                          <h2 class="modal-heading">This is a modal</h2>
+                        </div>
+                        
+                 
+                      </div>
+                    </div>
             </div>
         </header>
-        
+        <script>
+        // Quick & dirty toggle to demonstrate modal toggle behavior
+$('.modal-toggle').on('click', function(e) {
+  e.preventDefault();
+  $('.modal').toggleClass('is-visible');
+});
+        </script>
     
     </body>
   
