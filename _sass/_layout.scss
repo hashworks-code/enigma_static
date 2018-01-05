@@ -73,9 +73,9 @@ body{
     margin:10px 0px 0px 21px;
   }
   &--list1 {
-    position: absolute;
-    right: 0px;
-    padding: 16px 21px 16px;
+    // position: absolute;
+
+    // padding: 16px 21px 16px;
   
     &--header{
       display: inline-block;
@@ -92,7 +92,7 @@ body{
      
     }
     button{
-      display: inline-block;
+      display:block;
       width: 128px;
       font-size: 12px;
       font-weight: 600;

@@ -70,38 +70,34 @@ body {
     height: 64px; }
     body .engima--logo {
       margin: 10px 0px 0px 21px; }
-    body .engima--list1 {
-      position: absolute;
-      right: 0px;
-      padding: 16px 21px 16px; }
-      body .engima--list1--header {
-        display: inline-block;
-        margin-top: 4px; }
-      body .engima--list1 a {
-        font-size: 24px;
-        color: #737373;
-        text-decoration: none;
-        font-family: 'PTSansRegular';
-        margin-right: 24px;
-        display: block;
-        padding: 16px 0px; }
-      body .engima--list1 button {
-        display: inline-block;
-        width: 128px;
-        font-size: 12px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #ffffff;
-        padding: 5px 0px;
-        background-image: linear-gradient(to left, #f38181, #f8b686);
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        margin-top: 16px; }
+    body .engima--list1--header {
+      display: inline-block;
+      margin-top: 4px; }
+    body .engima--list1 a {
+      font-size: 24px;
+      color: #737373;
+      text-decoration: none;
+      font-family: 'PTSansRegular';
+      margin-right: 24px;
+      display: block;
+      padding: 16px 0px; }
+    body .engima--list1 button {
+      display: block;
+      width: 128px;
+      font-size: 12px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      padding: 5px 0px;
+      background-image: linear-gradient(to left, #f38181, #f8b686);
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      margin-top: 16px; }
     body .engima__toggle {
       position: absolute;
       right: 12px;
