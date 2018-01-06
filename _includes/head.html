@@ -21,7 +21,7 @@
                 <div class="engima--list">
                     <div class="engima--list--header">
                             <a href="/feature" class="engima--home">Features</a>
-                            <a href="/blog" class="engima--home">Blogs</a>
+                            <!-- <a href="/blog" class="engima--home">Blogs</a> -->
                     </div>
                     <button href="#popup" id="open_popup">Request for Demo</button>
             </div>
@@ -48,51 +48,45 @@
 
            <!-- mobile view -->
             <div class="engima__toggle">     
-                      <div class="modal-toggle1">  <img src="../assets/image/toggle.svg" alt="hashlogo"></div>
-                    <div class="modal">
-                      <div class="modal-overlay modal-toggle1"></div>
-                     
-                      <div class="modal-wrapper1 modal-transition">
-                        <div class="modal-header">
-                          <div class="modal-close modal-toggle1">   <img  display="none" id="icon-close icon" src="../assets/image/cross.svg" alt="hashlogo"></div>
-                         
-                          <div class="engima--list1">
-                            <div class="engima--list1--header">
-                                    <a href="/feature" class="engima--home">Features</a>
-                                    <a href="/blog" class="engima--home">Blogs</a>
-                            </div>
-                            <button href="#popup" id="open_popup">Request for Demo</button>
-                            <a href="/index"><img class=""src="../assets/image/group.svg" alt="hashlogo"></a>
-                    </div>
-                        </div>
-                      </div>
-                    </div>
-             
+              <div class="modal-toggle1"  href="#mobileview" id="openMobile"> 
+                <img src="../assets/image/toggle.svg" alt="hashlogo"></div>
             </div>
+            <div  id="mobileview" >
+                <div class="modal1">
+                  <div class="mobileHeader">
+                      <div class="mobileHeader__close" id="close_view"><img src="../assets/image/cross.svg"></div> 
+                      <a href="/feature"><h2>Features</h2></a>
+                      <!-- <h2>Blogs</h2> -->
+                      <button class="mobileHeader__request" >Request for Demo</button>
+                      <a href="/index"><img class="" src="../assets/image/group.svg" alt="hashlogo"></a>
+                  </div>
+                </div>
+             </div>
+          
         </header>
         <script>
-            $('.modal-toggle1').on('click', function(e) {
-              e.preventDefault();
-              $('.modal').toggleClass('is-visible');
-            });
+        $('.modal-toggle1').on('click', function(e) {
+          e.preventDefault();
+          $('.modal').toggleClass('is-visible');
+        });
         </script>
         <script>
-          $("#open_popup").click(function(){
-          $("#popup").css("display", "flex");
-          $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-        $("#pop1").show();
-        $("#imga").hide();
+              $("#open_popup").click(function(){
+              $("#popup").css("display", "flex");
+              $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+            $("#pop1").show();
+            $("#imga").hide();
+            });
+          
+          $("#close_popup").click(function(){
+              $("#popup").css("display", "none");
+            }); 
+        
+        $('body').click(function(e){
+          if(e.target.style[0] == "display"){
+            $("#popup").css("display","none");
+          }
         });
-      
-       $("#close_popup").click(function(){
-          $("#popup").css("display", "none");
-        }); 
-     
-    $('body').click(function(e){
-      if(e.target.style[0] == "display"){
-        $("#popup").css("display","none");
-      }
-    });
 
    function submitContact(value) {
       if(value === 'success') {
@@ -101,6 +95,20 @@
         $("#imga").show();
       }
     }
+
+    $("#openMobile").click(function(){
+        $("#mobileview").css("display", "flex");
+      });
+    
+     $("#close_view").click(function(){
+        $("#mobileview").css("display", "none");
+      }); 
+   
+  $('body').click(function(e){
+    if(e.target.style[0] == "display"){
+      $("#mobileview").css("display","none");
+    }
+  });
      
       </script>
     

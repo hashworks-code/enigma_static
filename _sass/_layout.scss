@@ -8,63 +8,8 @@ body{
   .col-sm-4{
     padding: 0px;
   }
-  
-
-
-
-
-
-  .icon {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    fill: currentcolor;
-  }
-  
-  
-  
-
-  .modal.is-visible {
-      visibility: visible;
-  }
-  
-  .modal-overlay {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:#fafafa;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.3s, opacity 0.3s;
-  }
-  
-  .modal.is-visible .modal-overlay {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
-  }
-  
-  .modal-wrapper1 {
-    position: absolute;
-    z-index: 9999;
-    margin-left: -12em;
-  }
-  
-  .modal-transition {
-   
-    opacity: 0;
-  }
-  
-  .modal.is-visible .modal-transition {
-  
-    opacity: 1;
-  }
-  
  
+// mobile header
   .engima {
     background-color: #ffffff;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
@@ -72,70 +17,59 @@ body{
   &--logo{
     margin:10px 0px 0px 21px;
   }
-  &--list1 {
-    // position: absolute;
-
-    // padding: 16px 21px 16px;
-  
-    &--header{
-      display: inline-block;
-      margin-top: 4px;
-    }
-    a{
-      font-size: 24px;
-      color: #737373;
-      text-decoration: none;
-      font-family: 'PTSansRegular';
-      margin-right: 24px;
-      display: block;
-      padding: 16px 0px;
-     
-    }
-    button{
-      display:block;
-      width: 128px;
-      font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #ffffff;
-      padding: 5px 0px;
-      background-image: linear-gradient(to left, #f38181, #f8b686);
-      border: none;
-      outline: none;
-      border-radius: 4px;
-      margin-top: 16px;
-  
-    }
-  }
   &__toggle{
     position: absolute;
     right: 12px;
     top: 25px;
+    cursor: pointer;
   }
   &--list {
 display: none;
   }
-  &--home,{
-   
-    cursor: pointer;
   }
+  #mobileview{
+    position: fixed;
+    display: none;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  .modal1{
+    width:100%;
+    height: 100%;
+    background-color: #fefefe;
+  }
+  }
+  .mobileHeader{
+    width: 130px;
+    margin: 0 auto;
+    h2{
+      color: #737373;
+      font-size: 24px;
+      font-family: 'PTSansRegular';
+      font-weight: normal;
+      text-align: center;
+    }
+    &__close{
+      text-align: center;
+      margin: 49px 0px 129px;
+    }
+    &__request{
+      background-image: linear-gradient(to left, #f38181, #f8b686);
+      width: 128px;
+      font-family: 'PTSansRegular';
+      font-size: 12px;
+      font-style: normal;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      padding: 7px 0px;
+      margin: 32px 0px 129px;
+    }
   }
  
-.mobile-nav._button {
-
-  font-weight: 700;
-  color: #cbc8c7;
-  font-size: 12px;
-  float: right;
-  margin-right: 30px;
-  margin-top: 22px;
-  cursor: pointer;
-}
-  
 // start popup
 #popup, #popup1{
   position: fixed;
@@ -338,6 +272,9 @@ display: none;
    
  
   @media only screen and (min-width:768px) {
+    #mobileview,.modal1{
+      display: none;
+    }
     .engima {
       display: flex;
       background-color: #ffffff;
@@ -391,7 +328,7 @@ display: none;
     }
     }
 
-    #popup, #popup1{
+    #popup, #popup1,{
   .modal{
       position: relative;
       width: 666px;
@@ -399,7 +336,7 @@ display: none;
       background-color: #e0e0e0;
 }
 .contact{
-      height:348px;
+      height:375px;
       background-image: url("../assets/image/popup.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;  
