@@ -212,12 +212,11 @@ body {
         margin-top: 37px; }
         body .footer__list--social--logo1 {
           width: 21px;
-          height: 17px;
-          margin-right: 26px; }
+          height: 17px; }
         body .footer__list--social--logo2 {
           width: 18px;
           height: 17px;
-          margin-right: 26px; }
+          margin: 0px 17px; }
         body .footer__list--social--logo3 {
           width: 9px;
           height: 17px; }
@@ -321,6 +320,8 @@ body {
           padding: 0px 5px; }
         body .footer__list--social {
           margin-top: 0px; }
+          body .footer__list--social--logo2 {
+            margin: 0px 26px; }
         body .footer__list--blog {
           border-left: 1px solid #ffffff;
           border-right: 1px solid #ffffff; }

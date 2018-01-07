@@ -234,12 +234,11 @@ body{
        &--logo1{
         width: 21px;
         height: 17px;
-        margin-right: 26px;
       }
       &--logo2{
           width:18px;
           height: 17px;
-          margin-right: 26px;
+          margin: 0px 17px;
         }
         &--logo3{
           width:9px;
@@ -384,9 +383,14 @@ body{
           padding: 0px 5px;
          
       }
-    &--social{
-      margin-top:0px;
-    }
+      &--social{
+        margin-top: 0px;
+
+       &--logo2{
+           margin: 0px 26px;
+         }
+
+      }
     &--blog{
       border-left: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
