@@ -11,21 +11,21 @@ body{
  
 // mobile header
   .engima {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-    height: 64px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
   &--logo{
-    margin:10px 0px 0px 21px;
+        margin: 10px 0px 10px 21px;
+        height: 40px;
   }
   &__toggle{
-    position: absolute;
-    right: 12px;
-    top: 25px;
-    cursor: pointer;
+        position: absolute;
+        right: 12px;
+        top: 25px;
+        cursor: pointer;
   }
   &--list {
-display: none;
-  }
+       display: none;
+    }
   }
   #mobileview{
     position: fixed;
@@ -173,29 +173,21 @@ display: none;
     padding-top: 52px;
     font-family: 'PTSansRegular';
     font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.43;
-    letter-spacing: normal;
     text-align: center;
     color: #737373;
     width: 232px;
     margin: 0 auto;
 
     }
-    button{
+    #open_popup1{
         display: inline-block;
         width: 128px;
         font-size: 12px;
         font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
         text-align: center;
         color: #ffffff;
-        padding: 3px 0px 5px;
+        padding: 5px 0px 5px;
         background-image: linear-gradient(to left, #f38181, #f8b686);
         border: none;
         outline: none;
@@ -210,7 +202,7 @@ display: none;
 &__footerimg{
     height:317px;
     background-image: url("../assets/image/home/footer-1.jpg");
-    background-size: 100% 100%;
+    background-size:cover;
     background-repeat: no-repeat;
 }
  }
@@ -225,16 +217,14 @@ display: none;
        &__logo{
            img{
                margin: 26px 0px 20px;
+               width: 160px;
+               height: 44px;
            }
        }
        p{
            font-family: 'PTSansRegular';
            font-size: 28px;
            font-weight: 500;
-           font-style: normal;
-           font-stretch: normal;
-           line-height: normal;
-           letter-spacing: normal;
            text-align: center;
            color: #ffffff;
        }
@@ -264,10 +254,7 @@ display: none;
         font-family:'PTSansRegular';
         font-size: 14px;
         font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
+      
         text-align: center;
         color: #ffffff;
         padding: 24px 0px 28px;
@@ -309,7 +296,7 @@ display: none;
         margin-right: 24px;
        
       }
-      button{
+      #open_popup{
         display: inline-block;
         width: 159px;
         font-size: 14px;
@@ -362,7 +349,7 @@ display: none;
             margin: 0px auto;
             text-align: center;
         }
-        button{
+        #open_popup1{
             width: 166px;
             font-size: 14px;
             padding: 5px 0px 5px;
@@ -426,7 +413,7 @@ display: none;
               text-align: center;
               font-size: 16px;
           }
-          button{
+         #open_popup1{
               padding: 8px 0px 8px;
             }
       }
@@ -461,7 +448,7 @@ display: none;
         a{
          font-size: 20px; 
         }
-        button{
+        #open_popup{
           width: 192px;
           font-size: 16px;
           padding: 15px 0px;
@@ -476,7 +463,7 @@ display: none;
               text-align: center;
               font-size: 18px;
           }
-          button{
+         #open_popup1{
               width: 195px;
               font-size: 16px;
               padding: 15px 0px 15px;
