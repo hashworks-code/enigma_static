@@ -1,7 +1,113 @@
 
+.testing {
+    transform: scale(5);
+    transition: 2s linear;
+}
+.testing1 {
+    transform: scale(4);
+    transition: 2s linear;
+}
+.clients .clients-info{
+    padding:7px;
+    margin-bottom:20px;
+    width:20px;
+    height:20px;
+    line-height:0;
+    opacity:1;
+    margin:15px auto 10px;
+    background-color: #f38181;
+    border-radius: 50%;
+    // transform: scale(1);
+    img {
+        width: 8px;
+        padding: 0;
+        position: absolute;
+        top: 4px;
+    }
+    h5{
+        font-size: 2px;
+        width: 12px;
+        position: absolute;
+        left: 4px;
+        top: 13px;
+    }
+
+  }
+  .clients .clients-info1{
+    padding:7px;
+    margin-bottom:20px;
+    width:20px;
+    height:20px;
+    line-height:0;
+    opacity:1;
+    margin:15px auto 10px;
+    background-color:#5e7383;
+    border-radius: 50%;
+    img {
+        width: 8px;
+        padding: 0;
+        position: absolute;
+        top: 4px;
+    }
+    h5{
+        font-size: 2px;
+        width: 12px;
+        position: absolute;
+        left: 4px;
+        top: 13px;
+    }
+  }
+  .clients .clients-info3{
+    padding:7px;
+    margin-bottom:20px;
+    width:20px;
+    height:20px;
+    line-height:0;
+    opacity:1;
+    margin:15px auto 10px;
+    background-color: #78a693;
+    border-radius: 50%;
+    img {
+        width: 6px;
+        padding: 0;
+        position: absolute;
+        top: 4px;
+    }
+    h5{
+        font-size: 2px;
+        width: 12px;
+        position: absolute;
+        left: 4px;
+        top: 13px;
+    }
+  }
+  .clients .clients-info4{
+    padding:7px;
+    margin-bottom:20px;
+    width:20px;
+    height:20px;
+    line-height:0;
+    opacity:1;
+    margin:15px auto 10px;
+    background-color: #efa269;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    img {
+        width: 8px;
+        padding: 0;
+        position: absolute;
+        top: 4px;
+    }
+    h5{
+        font-size: 2px;
+        width: 13px;
+        position: absolute;
+        left: 4px;
+        top: 14px;
+    }
+  }
     
     .home{
-       
         .homeAlligment{
             width: 310px;
             margin: 0 auto;
@@ -117,20 +223,19 @@
            &--feature1{
             width: 100px;
             height: 100px;
-            background-color: #f38181;
             border-radius: 50%;
             position: relative;
             left: 14px;
-            bottom: 15px;
+            bottom: -10px;
+            
            }
            &--feature2{
             width: 90px;
             height: 90px;
-            background-color:#5e7383;
             border-radius: 50%;
             position: relative;
             left: 43px;
-            top: 19px;
+            top: 35px;
            }
            &__right{
             position: absolute;
@@ -140,25 +245,23 @@
             &--feature3{
                 width: 100px;
                 height: 100px;
-                background-color:#78a693;
                 border-radius: 50%;
                 position: relative;
-                right: 3px;
-                bottom: 2px;
+                right: 8px;
+                bottom: -10px;
                }
                &--feature4{
                 width: 90px;
                 height: 90px;
-                background-color: #efa269;
                 border-radius: 50%;
                 position: relative;
                 right: 30px;
-                top: 33px;
+                top:35px;
                }
            }
          
           .featureimage{
-            padding: 17px 0px 0px 29px;
+            padding: 10px 0px 0px 22px;
             
           }
            h5{
@@ -281,24 +384,24 @@
                    }
                    &--feature1{
                     left: 53px;
-                    bottom: 175px;
+                    bottom: 125px;
                    }
                    &--feature2{
                     left: 124px;
-                    top: -122px;
+                    top: -103px;
                    }
                    &__right{
                     position: absolute;
                     right: 20px;
-                    top: 256px;
+                    top: 236px;
         
                     &--feature3{
                         right: 53px;
-                        bottom: 175px;
+                        bottom: 123px;
                        }
                        &--feature4{
                         right: 102px;
-                        top: -125px;
+                        top: -103px;
                        }
                    } 
                 }
@@ -382,11 +485,11 @@
                        }
                        &--feature1{
                         left: 180px;
-                        bottom: 175px;
+                        bottom: 140px;
                        }
                        &--feature2{
                         left: 257px;
-                        top: -125px;
+                        top: -114px;
                        }
                        &__right{
                         position: absolute;
@@ -395,11 +498,11 @@
             
                         &--feature3{
                             right: 160px;
-                            bottom: 128px;
+                            bottom: 112px;
                            }
                            &--feature4{
                             right: 237px;
-                            top: -77px;
+                            top: -80px;
                            }
                        } 
                     }
@@ -483,12 +586,12 @@
                         }
                            &--feature1{
                             left: 328px;
-                            bottom: 205px;
+                            bottom: 175px;
                         
                            }
                            &--feature2{
                             left: 411px;
-                            top: -161px;
+                            top: -145px;
                            }
                            &__right{
                             position: absolute;
@@ -497,11 +600,11 @@
                 
                             &--feature3{
                                 right: 318px;
-                                bottom: 133px;
+                                bottom: 118px;
                                }
                                &--feature4{
                                 right: 374px;
-                                top: -88px;
+                                top: -90px;
                                }
                            } 
                         }

@@ -189,9 +189,9 @@ function submitContact3(value) {
                 </div>
             </div>
         </div>
-            <div class="home__feature">
-                    <div class="row"> 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="home__feature">
+            <div class="row"> 
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>Features</h2>
                             <p> Set up Enigma in minutes with just a few lines of code. Get notifications via email, 
                                 SMS, or chat as part of an existing workflow when errors occur or resurface.</p>
@@ -205,39 +205,159 @@ function submitContact3(value) {
                                 <img class="home__feature--border6" src="../assets/image/home/border6.svg" alt="">
                                 <img class="home__feature--border7" src="../assets/image/home/border7.svg" alt="">
                                 <img class="home__feature--border8" src="../assets/image/home/border8.svg" alt="">
-                                <div class="home__feature--feature1">
-                              
-                            <img class="featureimage" src="../assets/image/home/feature1.svg" alt="">
-                            <h5>Choose Your 
-                                Configuration</h5> 
-                           </div>
-                           <div class="home__feature--feature2">
-                            <img  class="featureimage" src="../assets/image/home/feature2.svg" alt="">
-                            <h5>Extreme
-                                Performance</h5>
-                           </div>
+                        
+     <div class="home__feature--feature1 clients" id="clients">
+        <div class="containerr">
+             <div class="clients-info">
+                <img class="featureimage" src="../assets/image/home/feature1.svg" alt="">
+                <h5>Choose Your Configuration</h5> 
+          </div>
+        </div>		
+     </div>          
+    <div class="home__feature--feature2 clients"  id="zoom2">
+        <div class="containerr">
+            <div class="clients-info1">
+                <img  class="featureimage" src="../assets/image/home/feature2.svg" alt="">
+                <h5>Extreme Performance</h5>
+            </div>
+        </div>
+    </div>
                            
-                           <div class="home__feature__right">
-                           <div class="home__feature__right--feature3">
-                            <img  class="featureimage" src="../assets/image/home/feature3.svg" alt="">
-                            <h5> Enterprise 
-                                Security</h5>
-                           </div>
-                           <div class="home__feature__right--feature4">
-                            <img  class="featureimage" src="../assets/image/home/feature4.svg" alt="">
-                            <h5>Easy to 
-                                Deploy</h5>
-                           </div>
-                        </div>
-                      
-                        </div>
-                        </div>
-                      
-                    </div>
-               
-            </div> 
+    <div class="home__feature__right">
+        <div class="home__feature__right--feature3 clients"  id="zoom3">
+            <div class="containerr">
+                <div class="clients-info3">
+                    <img  class="featureimage" src="../assets/image/home/feature3.svg" alt="">
+                    <h5> Enterprise Security</h5>
+                </div>
+             </div>
+        </div>
+        <div class="home__feature__right--feature4 clients"  id="zoom4">
+            <div class="containerr">
+                 <div class="clients-info4">
+                    <img  class="featureimage" src="../assets/image/home/feature4.svg" alt="">
+                    <h5>Easy to  Deploy</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ </div>
+ </div>            
+</div> 
 </div>
+  <script>
   
+  $(window).scroll(function(){
+  var windowWidth = $(this).width();
+  var windowHeight = $(this).height();
+  var windowScrollTop = $(this).scrollTop();
+  
+
+  var firstAnimation = function(){
+    $('.clients .clients-info').each(
+       function(){ 
+        //  $(this).delay(500).animate(
+        //    {opacity:1,height:'100',width:'100'},1500);
+           
+          $(this).addClass('testing'); 
+           
+           }
+     	);
+  };
+ 
+  if(windowWidth<=549){
+    if(windowScrollTop>1500){
+  		firstAnimation();
+  	}
+  }else if(windowWidth>549 && windowWidth>=991){
+    if(windowScrollTop>1500){
+  		firstAnimation();
+  	} 
+  }else{
+     if(windowScrollTop>1500){
+  		firstAnimation();
+  	}
+  }
+
+  var firstAnimation1 = function(){
+    $('.clients .clients-info1').each(
+       function(){ 
+        
+            $(this).addClass('testing1');
+           }
+     	);
+  };
+ 
+  if(windowWidth<=549){
+    if(windowScrollTop>1500){
+      $('.clients').css('background','#fafafa');
+  		firstAnimation1();
+  	}
+  }else if(windowWidth>549 && windowWidth>=991){
+    if(windowScrollTop>1500){
+       $('.clients').css('background','#fafafa');
+  		firstAnimation1();
+  	} 
+  }else{
+     if(windowScrollTop>1500){
+       $('.clients').css('background','#fafafa');
+  		firstAnimation1();
+  	}
+  }
+//third 
+var firstAnimation3 = function(){
+    $('.clients .clients-info3').each(
+       function(){ 
+        $(this).addClass('testing'); 
+       }
+     	);
+  };
+ 
+  if(windowWidth<=549){
+    if(windowScrollTop>1500){
+      $('.clients').css('background','#fafafa');
+  		firstAnimation3();
+  	}
+  }else if(windowWidth>549 && windowWidth>=991){
+    if(windowScrollTop>1500){
+       $('.clients').css('background','#fafafa');
+  		firstAnimation3();
+  	} 
+  }else{
+     if(windowScrollTop>1500){
+       $('.clients').css('background','#fafafa');
+  		firstAnimation3();
+  	}
+  }
+  //4th
+  var firstAnimation4 = function(){
+    $('.clients .clients-info4').each(
+       function(){ 
+        $(this).addClass('testing1'); 
+        }
+     	);
+  };
+ 
+  if(windowWidth<=549){
+    if(windowScrollTop>1500){
+      $('.clients').css('background','#fafafa');
+  		firstAnimation4();
+  	}
+  }else if(windowWidth>549 && windowWidth>=991){
+    if(windowScrollTop>1500){
+       $('.clients').css('background','#fafafa');
+  		firstAnimation4();
+  	} 
+  }else{
+     if(windowScrollTop>1500){
+       $('.clients').css('background','#fafafa');
+  		firstAnimation4();
+  	}
+  }
+
+});
+  </script>
  
 <div class="request">
         <div class="request__notisfication">
@@ -329,6 +449,3 @@ if(value === 'success') {
 </script>
 </body>
 </html>
-    
-
-
