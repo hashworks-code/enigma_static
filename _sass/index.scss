@@ -4,7 +4,7 @@
     transition: 2s linear;
 }
 .testing1 {
-    transform: scale(4);
+    transform: scale(4.5);
     transition: 2s linear;
 }
 .clients .clients-info{
@@ -23,6 +23,7 @@
         padding: 0;
         position: absolute;
         top: 4px;
+        left: 6px;
     }
     h5{
         font-size: 2px;
@@ -48,6 +49,7 @@
         padding: 0;
         position: absolute;
         top: 4px;
+        left: 6px;
     }
     h5{
         font-size: 2px;
@@ -100,7 +102,7 @@
     }
     h5{
         font-size: 2px;
-        width: 13px;
+        width: 12px;
         position: absolute;
         left: 4px;
         top: 14px;

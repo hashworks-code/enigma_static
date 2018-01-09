@@ -402,7 +402,7 @@ body {
   transition: 2s linear; }
 
 .testing1 {
-  transform: scale(4);
+  transform: scale(4.5);
   transition: 2s linear; }
 
 .clients .clients-info {
@@ -419,7 +419,8 @@ body {
     width: 8px;
     padding: 0;
     position: absolute;
-    top: 4px; }
+    top: 4px;
+    left: 6px; }
   .clients .clients-info h5 {
     font-size: 2px;
     width: 12px;
@@ -441,7 +442,8 @@ body {
     width: 8px;
     padding: 0;
     position: absolute;
-    top: 4px; }
+    top: 4px;
+    left: 6px; }
   .clients .clients-info1 h5 {
     font-size: 2px;
     width: 12px;
@@ -489,7 +491,7 @@ body {
     top: 4px; }
   .clients .clients-info4 h5 {
     font-size: 2px;
-    width: 13px;
+    width: 12px;
     position: absolute;
     left: 4px;
     top: 14px; }
