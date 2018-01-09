@@ -426,7 +426,8 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 13px; }
+    top: 12px;
+    line-height: 1.6; }
 
 .clients .clients-info1 {
   padding: 7px;
@@ -449,7 +450,8 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 13px; }
+    top: 12px;
+    line-height: 1.6; }
 
 .clients .clients-info3 {
   padding: 7px;
@@ -471,7 +473,8 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 13px; }
+    top: 12px;
+    line-height: 1.6; }
 
 .clients .clients-info4 {
   padding: 7px;
@@ -494,7 +497,8 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 14px; }
+    top: 13px;
+    line-height: 1.6; }
 
 .home .homeAlligment {
   width: 310px;
