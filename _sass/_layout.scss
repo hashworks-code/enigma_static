@@ -1,4 +1,6 @@
-
+.abc{
+  height: 388px;
+}
 body{
   margin: 0px;
   a{
@@ -8,7 +10,9 @@ body{
   .col-sm-4{
     padding: 0px;
   }
- 
+ button{
+   cursor: pointer;
+ }
 // mobile header
   .engima {
         background-color: #ffffff;
@@ -25,6 +29,7 @@ body{
   }
   &--list {
        display: none;
+      
     }
   }
   #mobileview{
@@ -75,7 +80,7 @@ body{
   }
  
 // start popup
-#popup, #popup1,#popup3{
+#popup, #popup1,#popup3,#popup0{
   position: fixed;
   display: none;
   margin: auto;
@@ -89,13 +94,13 @@ body{
 .modal{
   position: relative;
   width: 280px;
-  height: 476px;
+  height: 505px;
   border-radius: 5px;
   background-color: #fefefe;
 }
 .contact{
   // background-image: url(../assets/image/popup.jpg);
-  background-size: contain;
+  background-size: 100% 40%;
   background-repeat: no-repeat;
   background-position: bottom;
  &__close{
@@ -229,6 +234,7 @@ body{
                margin: 26px 0px 20px;
                width: 160px;
                height: 44px;
+               cursor: pointer;
            }
        }
        p{
@@ -238,9 +244,12 @@ body{
            text-align: center;
            color: #ffffff;
        }
-      
+       &--blog{
+        cursor: pointer;
+      }
      &--social{
        margin-top: 37px;
+       margin-left: 32px;
        &--logo1{
         width: 21px;
         height: 17px;
@@ -329,7 +338,7 @@ body{
     }
     }
 
-    #popup, #popup1,{
+    #popup, #popup1,#popup0{
   .modal{
       position: relative;
       width: 666px;
@@ -361,7 +370,7 @@ body{
         #open_popup1{
             width: 166px;
             font-size: 14px;
-            padding: 5px 0px 5px;
+            padding: 8px 0px 8px;
             margin: 32px auto 0px;
         
           }
@@ -403,7 +412,7 @@ body{
       }
     &--blog{
       border-left: 1px solid #ffffff;
-      border-right: 1px solid #ffffff;
+      cursor: pointer;
     }
    }
     &__copyright{

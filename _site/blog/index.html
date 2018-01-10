@@ -35,7 +35,7 @@
         <div class="contact__form" id="pop1">
           <input type="text" placeholder="Name">
           <input type="email" placeholder="Email">
-          <input type="number" placeholder="Phone">
+          <input type="text" placeholder="Phone">
           <textarea placeholder="Message"></textarea>
           <button class="send" type="button" onClick="submitContact('success')">Send</button>
         </div>  
@@ -71,7 +71,7 @@
             <div class="contact__form" id="pop3">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
-                <input type="number" placeholder="Phone">
+                <input type="text" placeholder="Phone">
                 <textarea placeholder="Message"></textarea>
                 <button class="send" type="button" onClick="submitContact3('success')">Send</button>
             </div>  
@@ -104,6 +104,7 @@
 function submitContact(value) {
   if(value === 'success') {
     $("#bgImg").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+    $("#bgImg").height("383px");
     $("#pop1").hide();
     $("#imga").show();
   }
@@ -144,6 +145,7 @@ $("#open_popup3").click(function(){
 function submitContact3(value) {
   if(value === 'success') {
     $("#bgImg3").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+    $("#bgImg3").height("383px");
     $("#pop3").hide();
     $("#imga3").show();
   }
@@ -169,7 +171,7 @@ function submitContact3(value) {
                       <div class="contact__form" id="pop2">
                         <input type="text" placeholder="Name">
                         <input type="email" placeholder="Email">
-                        <input type="number" placeholder="Phone">
+                        <input type="text" placeholder="Phone">
                         <textarea placeholder="Message"></textarea>
                         <button class="send" type="button" onClick="submitContact1('success')">Send</button>
                       </div>  
@@ -189,13 +191,13 @@ function submitContact3(value) {
 <footer class="footer">
   <div class="footer__list">
         <div class="footer__list__logo ">
-            <img class="" src="../assets/image/group1.svg" alt="hashlogo">
+          <a href="/index"> <img class="" src="../assets/image/group1.svg" alt="hashlogo"></a>
         </div>
    <div> 
   
     <a href="/feature"><p>Features</p></a>
-    <a ><p class="footer__list--blog">Blog</p></a>
-      <p>  Contact</p>
+    <!-- <a ><p class="footer__list--blog">Blog</p></a> -->
+      <p class="footer__list--blog"  href="#popup0" id="open_popup0">  Contact</p>
     </div> 
    <div class="footer__list--social">
       <a href="https://twitter.com/hashworksco" target="_blank">
@@ -208,9 +210,26 @@ function submitContact3(value) {
           <img class="footer__list--social--logo3 " src="../assets/image/facebook.svg" alt="hashlogo">
       </a>
    </div>
-  
-</div>
 
+</div>
+  <!-- popup -->
+  <div id="popup0" >
+    <div class="modal contact" id="bgImg0">
+       <div class="contact__close" id="close_popup0"><img  src="../assets/image/cross.svg"></div>
+        <div class="contact__form" id="pop0">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Phone">
+          <textarea placeholder="Message"></textarea>
+          <button class="send" type="button" onClick="submitContact0('success')">Send</button>
+        </div>  
+        <div class="contact__thanku" id="imga0">
+            <h1>Thank you!</h1>
+            <h2>We will get back to you.</h2>
+          </div>
+        </div>
+      </div>
+  <!-- end popup -->
   <div class="footer__copyright">
      <h2>Copyright2017@ Hashworks.co</h2>
   </div>  
@@ -231,16 +250,49 @@ function submitContact3(value) {
 $('body').click(function(e){
 if(e.target.style[0] == "display"){
   $("#popup1").css("display","none");
+  $("#popup1").css("height","300px;");
 }
 });
 
 function submitContact1(value) {
 if(value === 'success') {
   $("#bgImg1").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+  $("#bgImg1").height("383px");
+  // $("#popup1").css("height","300px");
   $("#pop2").hide();
   $("#imga1").show();
 }
 }
+
+//2nd popup
+$("#open_popup0").click(function(){
+    $("#popup0").css("display", "flex");
+    $("#bgImg0").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+  $("#pop0").show();
+  $("#imga0").hide();
+  });
+
+ $("#close_popup0").click(function(){
+    $("#popup0").css("display", "none");
+  }); 
+
+
+  $('body').click(function(e){
+if(e.target.style[0] == "display"){
+  $("#popup0").css("display","none");
+}
+});
+
+function submitContact0(value) {
+if(value === 'success') {
+  $("#bgImg0").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+  $("#bgImg0").height("383px");
+  $("#pop0").hide();
+  $("#imga0").show();
+}
+}
+
+
 </script>
 </body>
 </html> 

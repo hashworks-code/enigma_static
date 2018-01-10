@@ -26,6 +26,9 @@
 .fullHeight {
   height: 100%; }
 
+.abc {
+  height: 388px; }
+
 body {
   margin: 0px; }
   body a {
@@ -33,6 +36,8 @@ body {
     color: #4a4a4a; }
   body .col-sm-4 {
     padding: 0px; }
+  body button {
+    cursor: pointer; }
   body .engima {
     background-color: #ffffff;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15); }
@@ -86,7 +91,7 @@ body {
       margin: 32px 0px 129px;
       border-radius: 4px;
       cursor: pointer; }
-  body #popup, body #popup1, body #popup3 {
+  body #popup, body #popup1, body #popup3, body #popup0 {
     position: fixed;
     display: none;
     margin: auto;
@@ -97,24 +102,24 @@ body {
     width: 100%;
     height: 100%;
     z-index: 999; }
-    body #popup .modal, body #popup1 .modal, body #popup3 .modal {
+    body #popup .modal, body #popup1 .modal, body #popup3 .modal, body #popup0 .modal {
       position: relative;
       width: 280px;
-      height: 476px;
+      height: 505px;
       border-radius: 5px;
       background-color: #fefefe; }
-    body #popup .contact, body #popup1 .contact, body #popup3 .contact {
-      background-size: contain;
+    body #popup .contact, body #popup1 .contact, body #popup3 .contact, body #popup0 .contact {
+      background-size: 100% 40%;
       background-repeat: no-repeat;
       background-position: bottom; }
-      body #popup .contact__close, body #popup1 .contact__close, body #popup3 .contact__close {
+      body #popup .contact__close, body #popup1 .contact__close, body #popup3 .contact__close, body #popup0 .contact__close {
         position: absolute;
         right: 14px;
         font-size: 30px;
         cursor: pointer; }
-      body #popup .contact__form, body #popup1 .contact__form, body #popup3 .contact__form {
+      body #popup .contact__form, body #popup1 .contact__form, body #popup3 .contact__form, body #popup0 .contact__form {
         margin: 50px 20px 0px 20px; }
-        body #popup .contact__form input, body #popup1 .contact__form input, body #popup3 .contact__form input {
+        body #popup .contact__form input, body #popup1 .contact__form input, body #popup3 .contact__form input, body #popup0 .contact__form input {
           width: 240px;
           height: 36px;
           border-radius: 4px;
@@ -131,12 +136,13 @@ body {
         body #popup .contact__form input[type=number]::-webkit-inner-spin-button,
         body #popup .contact__form input[type=number]::-webkit-outer-spin-button, body #popup1 .contact__form input[type=number]::-webkit-inner-spin-button,
         body #popup1 .contact__form input[type=number]::-webkit-outer-spin-button, body #popup3 .contact__form input[type=number]::-webkit-inner-spin-button,
-        body #popup3 .contact__form input[type=number]::-webkit-outer-spin-button {
+        body #popup3 .contact__form input[type=number]::-webkit-outer-spin-button, body #popup0 .contact__form input[type=number]::-webkit-inner-spin-button,
+        body #popup0 .contact__form input[type=number]::-webkit-outer-spin-button {
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
           margin: 0; }
-        body #popup .contact__form textarea, body #popup1 .contact__form textarea, body #popup3 .contact__form textarea {
+        body #popup .contact__form textarea, body #popup1 .contact__form textarea, body #popup3 .contact__form textarea, body #popup0 .contact__form textarea {
           width: 240px;
           min-height: 95px;
           border-radius: 4px;
@@ -145,7 +151,7 @@ body {
           outline: none;
           padding: 6px 0px 10px 11px;
           font-family: 'PTSansRegular'; }
-        body #popup .contact__form .send, body #popup1 .contact__form .send, body #popup3 .contact__form .send {
+        body #popup .contact__form .send, body #popup1 .contact__form .send, body #popup3 .contact__form .send, body #popup0 .contact__form .send {
           font-family: 'PTSansRegular';
           width: 98px;
           height: 32px;
@@ -156,17 +162,17 @@ body {
           color: white;
           margin: 16px 0px 35px 141px;
           border-radius: 4px; }
-      body #popup .contact__thanku, body #popup1 .contact__thanku, body #popup3 .contact__thanku {
+      body #popup .contact__thanku, body #popup1 .contact__thanku, body #popup3 .contact__thanku, body #popup0 .contact__thanku {
         margin-top: 57px;
         height: 300px; }
-        body #popup .contact__thanku h1, body #popup1 .contact__thanku h1, body #popup3 .contact__thanku h1 {
+        body #popup .contact__thanku h1, body #popup1 .contact__thanku h1, body #popup3 .contact__thanku h1, body #popup0 .contact__thanku h1 {
           font-family: 'rajdhaniMedium';
           font-size: 28px;
           color: #393939;
           margin-left: 74px;
           font-weight: 500;
           font-style: normal; }
-        body #popup .contact__thanku h2, body #popup1 .contact__thanku h2, body #popup3 .contact__thanku h2 {
+        body #popup .contact__thanku h2, body #popup1 .contact__thanku h2, body #popup3 .contact__thanku h2, body #popup0 .contact__thanku h2 {
           font-family: 'PTSansRegular';
           font-size: 16px;
           margin-left: 74px;
@@ -212,15 +218,19 @@ body {
       body .footer__list__logo img {
         margin: 26px 0px 20px;
         width: 160px;
-        height: 44px; }
+        height: 44px;
+        cursor: pointer; }
       body .footer__list p {
         font-family: 'PTSansRegular';
         font-size: 28px;
         font-weight: 500;
         text-align: center;
         color: #ffffff; }
+      body .footer__list--blog {
+        cursor: pointer; }
       body .footer__list--social {
-        margin-top: 37px; }
+        margin-top: 37px;
+        margin-left: 32px; }
         body .footer__list--social--logo1 {
           width: 21px;
           height: 17px; }
@@ -287,17 +297,17 @@ body {
           cursor: pointer; }
       body .engima--home {
         cursor: pointer; }
-    body #popup .modal, body #popup1 .modal {
+    body #popup .modal, body #popup1 .modal, body #popup0 .modal {
       position: relative;
       width: 666px;
       border-radius: 5px;
       background-color: #e0e0e0; }
-    body #popup .contact, body #popup1 .contact {
+    body #popup .contact, body #popup1 .contact, body #popup0 .contact {
       height: 375px;
       background-image: url("../assets/image/popup.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat; }
-      body #popup .contact__thanku, body #popup1 .contact__thanku {
+      body #popup .contact__thanku, body #popup1 .contact__thanku, body #popup0 .contact__thanku {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -310,7 +320,7 @@ body {
     body .request__notisfication #open_popup1 {
       width: 166px;
       font-size: 14px;
-      padding: 5px 0px 5px;
+      padding: 8px 0px 8px;
       margin: 32px auto 0px; }
     body .request__footerimg {
       height: 317px; }
@@ -335,7 +345,7 @@ body {
             margin: 0px 26px; }
         body .footer__list--blog {
           border-left: 1px solid #ffffff;
-          border-right: 1px solid #ffffff; }
+          cursor: pointer; }
       body .footer__copyright {
         margin: 26px auto 0px;
         width: 725px; }
@@ -426,7 +436,7 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 12px;
+    top: 11px;
     line-height: 1.6; }
 
 .clients .clients-info1 {
@@ -450,7 +460,7 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 12px;
+    top: 11px;
     line-height: 1.6; }
 
 .clients .clients-info3 {
@@ -473,7 +483,7 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 12px;
+    top: 11px;
     line-height: 1.6; }
 
 .clients .clients-info4 {
@@ -485,7 +495,6 @@ body {
   opacity: 1;
   margin: 15px auto 10px;
   background-color: #efa269;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%; }
   .clients .clients-info4 img {
     width: 8px;
@@ -497,7 +506,7 @@ body {
     width: 12px;
     position: absolute;
     left: 4px;
-    top: 13px;
+    top: 12px;
     line-height: 1.6; }
 
 .home .homeAlligment {
@@ -534,34 +543,46 @@ body {
   background-repeat: no-repeat; }
   .home__img p {
     width: 291px; }
+.home__configure img {
+  width: 9px; }
 .home__configure--image {
   height: 286px;
   background-image: url("../assets/image/home/configure-2.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
+  background-size: contain;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: center center; }
 .home__configure h2 {
   display: flex;
   justify-content: center; }
+.home__monitor img {
+  width: 9px; }
 .home__monitor--image {
   height: 286px;
   background-image: url("../assets/image/home/monitor3.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
+  background-size: contain;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: center center; }
 .home__monitor h2 {
   display: flex;
   justify-content: center; }
+.home__resolve img {
+  width: 9px; }
 .home__resolve--image {
   height: 286px;
   background-image: url("../assets/image/home/flag4.jpg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: center center; }
 .home__resolve h2 {
   display: flex;
   justify-content: center; }
 .home__feature {
   background-color: #fafafa;
   position: relative;
-  height: 510px;
+  height: 552px;
   z-index: -1; }
   .home__feature--learn {
     font-family: 'PTSansRegular';
@@ -581,11 +602,11 @@ body {
   .home__feature--border1 {
     position: absolute  !important;
     left: 0px !important;
-    top: 278px !important; }
+    top: 317px !important; }
   .home__feature--border2 {
     position: absolute  !important;
     right: 0px !important;
-    top: 274px !important; }
+    top: 312px !important; }
   .home__feature--border3, .home__feature--border4, .home__feature--border5, .home__feature--border6, .home__feature--border7, .home__feature--border8 {
     display: none; }
   .home__feature--feature1 {
@@ -594,14 +615,14 @@ body {
     border-radius: 50%;
     position: relative;
     left: 14px;
-    bottom: -10px; }
+    bottom: -46px; }
   .home__feature--feature2 {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     position: relative;
     left: 43px;
-    top: 35px; }
+    top: 81px; }
   .home__feature__right {
     position: absolute;
     right: 20px;
@@ -612,14 +633,14 @@ body {
       border-radius: 50%;
       position: relative;
       right: 8px;
-      bottom: -10px; }
+      bottom: -47px; }
     .home__feature__right--feature4 {
       width: 90px;
       height: 90px;
       border-radius: 50%;
       position: relative;
       right: 30px;
-      top: 35px; }
+      top: 81px; }
   .home__feature .featureimage {
     padding: 10px 0px 0px 22px; }
   .home__feature h5 {
@@ -741,9 +762,15 @@ body {
   .home__configure--image {
     height: 392px;
     margin-top: 58px; }
+  .home__configure img {
+    width: 11px; }
+  .home__monitor img {
+    width: 11px; }
   .home__monitor--image {
     height: 392px;
     margin-top: 58px; }
+  .home__resolve img {
+    width: 11px; }
   .home__resolve--image {
     height: 392px;
     margin: 58px 0px 69px; }
@@ -898,6 +925,8 @@ body {
   .feature__fast h1 {
     padding: 46px 0px 0px;
     display: inline-flex; }
+    .feature__fast h1 img {
+      width: 9px; }
   .feature__fast p {
     margin: 0 auto; }
   .feature__fast--img {
@@ -1149,6 +1178,8 @@ body {
       width: 838px; }
     .feature__fast h1 {
       padding: 58px 0px 57px; }
+      .feature__fast h1 img {
+        width: 11px; }
     .feature__fast--fast4 {
       left: 388px; }
   .feature__choose h1 {

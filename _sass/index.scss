@@ -30,7 +30,7 @@
         width: 12px;
         position: absolute;
         left: 4px;
-        top: 12px;
+        top: 11px;
         line-height: 1.6;    }
 
   }
@@ -56,7 +56,7 @@
         width: 12px;
         position: absolute;
         left: 4px;
-        top: 12px;
+        top: 11px;
         line-height: 1.6;
     }
   }
@@ -81,7 +81,7 @@
         width: 12px;
         position: absolute;
         left: 4px;
-        top: 12px;
+        top: 11px;
         line-height: 1.6;
     }
   }
@@ -94,7 +94,6 @@
     opacity:1;
     margin:15px auto 10px;
     background-color: #efa269;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     img {
         width: 8px;
@@ -107,7 +106,7 @@
         width: 12px;
         position: absolute;
         left: 4px;
-        top: 13px;
+        top: 12px;
         line-height: 1.6;
     }
   }
@@ -156,11 +155,16 @@
           }
         }
         &__configure{
+            img{
+                width: 9px;
+            }
             &--image{
                 height:286px;
                 background-image: url("../assets/image/home/configure-2.png");
-                background-size:100% 100%;
+                background-size: contain;
+                background-attachment: local;
                 background-repeat: no-repeat;
+                background-position: center center;
             }   
             h2{
                 display: flex;
@@ -168,11 +172,16 @@
               }
         }
         &__monitor{
+            img{
+                width: 9px;
+            }
             &--image{
                 height:286px;
                 background-image: url("../assets/image/home/monitor3.jpg");
-                background-size:100% 100%;
+                background-size: contain;
+                background-attachment: local;
                 background-repeat: no-repeat;
+                background-position: center center;
             }   
           h2{
             display: flex;
@@ -180,11 +189,16 @@
           }
         }
         &__resolve{
+            img{
+                width: 9px;
+            }
             &--image{
                 height:286px;
                 background-image: url("../assets/image/home/flag4.jpg");
-                background-size:contain;
+                background-size: contain;
+                background-attachment: local;
                 background-repeat: no-repeat;
+                background-position: center center;
             }   
             h2{
                 display: flex;
@@ -194,7 +208,7 @@
         &__feature{
             background-color: #fafafa;
             position: relative;
-            height: 510px;
+            height: 552px;
             z-index: -1;
            &--learn{
             font-family: 'PTSansRegular';
@@ -215,12 +229,12 @@
            &--border1{
             position: absolute  !important;
             left: 0px !important;
-            top: 278px !important;
+            top: 317px !important;
         }
         &--border2{
             position: absolute  !important;
             right: 0px !important;
-            top: 274px !important;
+            top: 312px !important;
         }
         &--border3,&--border4,&--border5,&--border6, &--border7, &--border8{
             display: none;
@@ -231,7 +245,7 @@
             border-radius: 50%;
             position: relative;
             left: 14px;
-            bottom: -10px;
+            bottom: -46px;
             
            }
            &--feature2{
@@ -240,7 +254,7 @@
             border-radius: 50%;
             position: relative;
             left: 43px;
-            top: 35px;
+            top: 81px;
            }
            &__right{
             position: absolute;
@@ -253,7 +267,7 @@
                 border-radius: 50%;
                 position: relative;
                 right: 8px;
-                bottom: -10px;
+                bottom: -47px;
                }
                &--feature4{
                 width: 90px;
@@ -261,7 +275,7 @@
                 border-radius: 50%;
                 position: relative;
                 right: 30px;
-                top:35px;
+                top:81px;
                }
            }
          
@@ -443,15 +457,24 @@
                         &--image{
                             height: 392px;
                             margin-top: 58px;
-                        }   
+                        }  
+                        img {
+                            width: 11px;
+                        } 
                     }
                     &__monitor{
+                        img {
+                            width: 11px;
+                        }
                         &--image{
                             height: 392px;
                             margin-top: 58px;
                         }   
                     }
                     &__resolve{
+                        img {
+                            width: 11px;
+                        }
                         &--image{
                             height: 392px;
                             margin: 58px 0px 69px;

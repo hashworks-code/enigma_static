@@ -49,6 +49,9 @@
             position: relative;
         }
         h1{
+            img{
+                width: 9px;
+            }
             padding: 46px 0px 0px;
             display: inline-flex;
         }
@@ -390,6 +393,9 @@
                 width:838px;
             }
             h1{
+                img{
+                    width: 11px;
+                }
                 padding: 58px 0px 57px;
             }
             &--fast4{

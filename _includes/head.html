@@ -35,7 +35,7 @@
         <div class="contact__form" id="pop1">
           <input type="text" placeholder="Name">
           <input type="email" placeholder="Email">
-          <input type="number" placeholder="Phone">
+          <input type="text" placeholder="Phone">
           <textarea placeholder="Message"></textarea>
           <button class="send" type="button" onClick="submitContact('success')">Send</button>
         </div>  
@@ -71,7 +71,7 @@
             <div class="contact__form" id="pop3">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
-                <input type="number" placeholder="Phone">
+                <input type="text" placeholder="Phone">
                 <textarea placeholder="Message"></textarea>
                 <button class="send" type="button" onClick="submitContact3('success')">Send</button>
             </div>  
@@ -104,6 +104,7 @@
 function submitContact(value) {
   if(value === 'success') {
     $("#bgImg").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+    $("#bgImg").height("383px");
     $("#pop1").hide();
     $("#imga").show();
   }
@@ -144,6 +145,7 @@ $("#open_popup3").click(function(){
 function submitContact3(value) {
   if(value === 'success') {
     $("#bgImg3").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+    $("#bgImg3").height("383px");
     $("#pop3").hide();
     $("#imga3").show();
   }
