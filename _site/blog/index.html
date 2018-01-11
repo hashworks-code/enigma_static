@@ -32,11 +32,13 @@
             <img  src="../assets/image/cross.svg">
           </div>
           <div class="contact__form" id="pop1">
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Phone">
-              <textarea placeholder="Message"></textarea>
-              <button class="send" type="button" onClick="submitContact('success')">Send</button>
+            <form action="" id="test-form2">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email"  name="email" placeholder="Email">
+              <input type="text" name="phone" placeholder="Phone">
+              <textarea name="message" placeholder="Message"></textarea>
+              <button class="send" id="submit-form2" type="button" onClick="submitContact('success')">Send</button>
+            </form>
           </div>  
           <div class="contact__thanku" id="imga">
               <h1>Thank you!</h1>
@@ -68,11 +70,13 @@
         <div class="modal contact" id="bgImg3">
           <div class="contact__close" id="close_popup3"><img  src="../assets/image/cross.svg"></div>
             <div class="contact__form" id="pop3">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Phone">
-                <textarea placeholder="Message"></textarea>
-                <button class="send" type="button" onClick="submitContact3('success')">Send</button>
+              <form action="" id="test-form3">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email"  name="email" placeholder="Email">
+                <input type="text" name="phone" placeholder="Phone">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button class="send" id="submit-form3" type="button" onClick="submitContact3('success')">Send</button>
+              </form>
             </div>  
             <div class="contact__thanku" id="imga3">
                 <h1>Thank you!</h1>
@@ -83,6 +87,41 @@
  </header>
      <!-- <script type="text/javascript" src="/assets/js/head.js"></script> -->
      <script>
+
+// google sheet update
+var $form2 = $('form#test-form2'),
+    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+     
+    $('#submit-form2').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form2.serializeObject(),
+    success: function (data) {
+        }
+  })
+})
+// end sheet
+
+// google sheet update
+var $form3 = $('form#test-form3'),
+    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+     
+    $('#submit-form3').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form3.serializeObject(),
+    success: function (data) {
+        }
+  })
+})
+// end sheet
+
    $("#open_popup").click(function(){
         $("#popup").css("display", "flex");
         $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
@@ -162,7 +201,7 @@ function submitContact3(value) {
                        SMS, or chat as part of an existing workflow when errors occur or resurface.</p>
                        <button href="#popup1" id="open_popup1">Request for Demo</button>
               </div>
-              <!-- pop start -->
+              <!-- Request for Demo popup -->
               <div id="popup1" >
                   <div class="modal contact" id="bgImg1">
                      <div class="contact__close" id="close_popup1"><img  src="../assets/image/cross.svg"></div>
@@ -186,8 +225,7 @@ function submitContact3(value) {
       </div>
       <div class="request__footerimg"></div>
     </div>
-
-      
+    
 <footer class="footer">
     <div class="footer__list">
       <div class="footer__list__logo ">
@@ -210,16 +248,18 @@ function submitContact3(value) {
             </a>
         </div>
     </div>
-     <!-- popup -->
+     <!--footer  popup -->
       <div id="popup0" >
         <div class="modal contact" id="bgImg0">
           <div class="contact__close" id="close_popup0"><img  src="../assets/image/cross.svg"></div>
             <div class="contact__form" id="pop0">
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Phone">
-              <textarea placeholder="Message"></textarea>
-              <button class="send" type="button" onClick="submitContact0('success')">Send</button>
+               <form action="" id="test-form2">
+                  <input type="text" name="name" placeholder="Name">
+                  <input type="email" name="email" placeholder="Email">
+                  <input type="text" name="phone" placeholder="Phone">
+                  <textarea name="message" placeholder="Message"></textarea>
+                  <button type="submit" id="submit-form0" class="send"  onClick="submitContact0('success')">Send</button>
+              </form>
             </div>  
             <div class="contact__thanku" id="imga0">
                 <h1>Thank you!</h1>
@@ -246,6 +286,21 @@ function submitContact3(value) {
     dataType: "json",
     data: $form.serializeObject(),
     success: function (data) {
+        }
+  })
+})
+
+var $form1 = $('form#test-form2'),
+    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+      
+$('#submit-form0').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form1.serializeObject(),
+    success: function () {
         }
   })
 })
@@ -307,6 +362,7 @@ function submitContact0(value) {
         $("#imga0").show();
   }
   }
+
 </script>
 </body>
 
