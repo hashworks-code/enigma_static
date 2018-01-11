@@ -503,10 +503,10 @@ body {
     top: 4px; }
   .clients .clients-info4 h5 {
     font-size: 2px;
-    width: 12px;
+    width: 62%;
     position: absolute;
     left: 4px;
-    top: 12px;
+    top: 13px;
     line-height: 1.6; }
 
 .home .homeAlligment {
