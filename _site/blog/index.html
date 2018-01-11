@@ -15,34 +15,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-
 <header class="engima">     
   <a href="/index"><img class="engima--logo " src="../assets/image/group.svg" alt="hashlogo"></a>
       <div class="engima--list">
-        <div class="engima--list--header">
+         <div class="engima--list--header">
             <a href="/feature" class="engima--home">Features</a>
             <!-- <a href="/blog" class="engima--home">Blogs</a> -->
-        </div>
+         </div>
             <button href="#popup" id="open_popup">Request for Demo</button>
       </div>
            
 <!-- popup -->
-    <div  id="popup" >
+    <div id="popup" >
       <div class="modal contact" id="bgImg">
-        <div class="contact__close" id="close_popup">
-          <img  src="../assets/image/cross.svg">
-        </div>
-        <div class="contact__form" id="pop1">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Phone">
-          <textarea placeholder="Message"></textarea>
-          <button class="send" type="button" onClick="submitContact('success')">Send</button>
-        </div>  
-        <div class="contact__thanku" id="imga">
-            <h1>Thank you!</h1>
-            <h2>We will get back to you.</h2>
-        </div>
+          <div class="contact__close" id="close_popup">
+            <img  src="../assets/image/cross.svg">
+          </div>
+          <div class="contact__form" id="pop1">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Phone">
+              <textarea placeholder="Message"></textarea>
+              <button class="send" type="button" onClick="submitContact('success')">Send</button>
+          </div>  
+          <div class="contact__thanku" id="imga">
+              <h1>Thank you!</h1>
+              <h2>We will get back to you.</h2>
+          </div>
       </div>
     </div>
   
@@ -50,7 +49,7 @@
 
            <!-- mobile view -->
       <div class="engima__toggle">     
-        <div class="modal-toggle1"  href="#mobileview" id="openMobile"> 
+          <div class="modal-toggle1"  href="#mobileview" id="openMobile"> 
           <img src="../assets/image/toggle.svg" alt="hashlogo"></div>
       </div>
       <div id="mobileview" >
@@ -84,11 +83,11 @@
  </header>
      <!-- <script type="text/javascript" src="/assets/js/head.js"></script> -->
      <script>
-     $("#open_popup").click(function(){
-    $("#popup").css("display", "flex");
-    $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-    $("#pop1").show();
-    $("#imga").hide();
+   $("#open_popup").click(function(){
+        $("#popup").css("display", "flex");
+        $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+        $("#pop1").show();
+        $("#imga").hide();
     });
       
     $("#close_popup").click(function(){
@@ -96,58 +95,57 @@
       }); 
     
     $('body').click(function(e){
-      if(e.target.style[0] == "display"){
+       if(e.target.style[0] == "display"){
         $("#popup").css("display","none");
       }
     });
 
 function submitContact(value) {
   if(value === 'success') {
-    $("#bgImg").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-    $("#bgImg").height("383px");
-    $("#pop1").hide();
-    $("#imga").show();
+        $("#bgImg").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+        $("#bgImg").height("383px");
+        $("#pop1").hide();
+        $("#imga").show();
   }
 }
 
-$("#openMobile").click(function(){
-    $("#mobileview").css("display", "flex");
+  $("#openMobile").click(function(){
+       $("#mobileview").css("display", "flex");
+    });
+
+  $("#close_view").click(function(){
+      $("#mobileview").css("display", "none");
+    }); 
+
+  $('body').click(function(e){
+      if(e.target.style[0] == "display"){
+      $("#mobileview").css("display","none");
+  }
   });
-
- $("#close_view").click(function(){
-    $("#mobileview").css("display", "none");
-  }); 
-
-$('body').click(function(e){
-if(e.target.style[0] == "display"){
-  $("#mobileview").css("display","none");
-}
-});
 //mob.header
 
 $("#open_popup3").click(function(){
-          $("#popup3").css("display", "flex");
-          $("#bgImg3").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-        $("#pop3").show();
-        $("#imga3").hide();
-        });
-      
-      $("#close_popup3").click(function(){
-          $("#popup3").css("display", "none");
-        }); 
+      $("#popup3").css("display", "flex");
+      $("#bgImg3").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+      $("#pop3").show();
+      $("#imga3").hide();
+   }); 
+  $("#close_popup3").click(function(){
+      $("#popup3").css("display", "none");
+    }); 
     
-    $('body').click(function(e){
+$('body').click(function(e){
       if(e.target.style[0] == "display"){
-        $("#popup3").css("display","none");
-      }
-    });
+      $("#popup3").css("display","none");
+  }
+});
 
 function submitContact3(value) {
-  if(value === 'success') {
-    $("#bgImg3").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-    $("#bgImg3").height("383px");
-    $("#pop3").hide();
-    $("#imga3").show();
+      if(value === 'success') {
+      $("#bgImg3").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+      $("#bgImg3").height("383px");
+      $("#pop3").hide();
+      $("#imga3").show();
   }
 }
      </script>
@@ -169,17 +167,19 @@ function submitContact3(value) {
                   <div class="modal contact" id="bgImg1">
                      <div class="contact__close" id="close_popup1"><img  src="../assets/image/cross.svg"></div>
                       <div class="contact__form" id="pop2">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="text" placeholder="Phone">
-                        <textarea placeholder="Message"></textarea>
-                        <button class="send" type="button" onClick="submitContact1('success')">Send</button>
+                       <form id="test-form">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button type="submit"id="submit-form" class="send" onClick="submitContact1('success')">Send</button>
+                      </form>
                       </div>  
                       <div class="contact__thanku" id="imga1">
                           <h1>Thank you!</h1>
                           <h2>We will get back to you.</h2>
-                        </div>
                       </div>
+                  </div>
                     </div>
               <!-- end popup -->
           </div>
@@ -189,110 +189,127 @@ function submitContact3(value) {
 
       
 <footer class="footer">
-  <div class="footer__list">
-        <div class="footer__list__logo ">
-          <a href="/index"> <img class="" src="../assets/image/group1.svg" alt="hashlogo"></a>
-        </div>
-   <div> 
-  
-    <a href="/feature"><p>Features</p></a>
-    <!-- <a ><p class="footer__list--blog">Blog</p></a> -->
-      <p class="footer__list--blog"  href="#popup0" id="open_popup0">  Contact</p>
-    </div> 
-   <div class="footer__list--social">
-      <a href="https://twitter.com/hashworksco" target="_blank">
-          <img class="footer__list--social--logo1 " src="../assets/image/twitter.svg" alt="hashlogo"> 
-      </a>
-      <a href="https://www.linkedin.com/company/hashworks?trk=top_nav_home" target="_blank">
-          <img class="footer__list--social--logo2 " src="../assets/image/linkedin.svg" alt="hashlogo">
-      </a>
-      <a href="https://www.facebook.com/hashworks" target="_blank">
-          <img class="footer__list--social--logo3 " src="../assets/image/facebook.svg" alt="hashlogo">
-      </a>
-   </div>
-
-</div>
-  <!-- popup -->
-  <div id="popup0" >
-    <div class="modal contact" id="bgImg0">
-       <div class="contact__close" id="close_popup0"><img  src="../assets/image/cross.svg"></div>
-        <div class="contact__form" id="pop0">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Phone">
-          <textarea placeholder="Message"></textarea>
-          <button class="send" type="button" onClick="submitContact0('success')">Send</button>
-        </div>  
-        <div class="contact__thanku" id="imga0">
-            <h1>Thank you!</h1>
-            <h2>We will get back to you.</h2>
-          </div>
-        </div>
+    <div class="footer__list">
+      <div class="footer__list__logo ">
+        <a href="/index"> <img class="" src="../assets/image/group1.svg" alt="hashlogo"></a>
       </div>
+        <div> 
+            <a href="/feature"><p>Features</p></a>
+            <!-- <a ><p class="footer__list--blog">Blog</p></a> -->
+            <p class="footer__list--blog"  href="#popup0" id="open_popup0">  Contact</p>
+        </div> 
+        <div class="footer__list--social">
+            <a href="https://twitter.com/hashworksco" target="_blank">
+              <img class="footer__list--social--logo1 " src="../assets/image/twitter.svg" alt="hashlogo"> 
+            </a>
+            <a href="https://www.linkedin.com/company/hashworks?trk=top_nav_home" target="_blank">
+              <img class="footer__list--social--logo2 " src="../assets/image/linkedin.svg" alt="hashlogo">
+            </a>
+            <a href="https://www.facebook.com/hashworks" target="_blank">
+             <img class="footer__list--social--logo3 " src="../assets/image/facebook.svg" alt="hashlogo">
+            </a>
+        </div>
+    </div>
+     <!-- popup -->
+      <div id="popup0" >
+        <div class="modal contact" id="bgImg0">
+          <div class="contact__close" id="close_popup0"><img  src="../assets/image/cross.svg"></div>
+            <div class="contact__form" id="pop0">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Phone">
+              <textarea placeholder="Message"></textarea>
+              <button class="send" type="button" onClick="submitContact0('success')">Send</button>
+            </div>  
+            <div class="contact__thanku" id="imga0">
+                <h1>Thank you!</h1>
+                <h2>We will get back to you.</h2>
+            </div>
+         </div>
+       </div>
   <!-- end popup -->
-  <div class="footer__copyright">
-     <h2>Copyright2017@ Hashworks.co</h2>
-  </div>  
+      <div class="footer__copyright">
+        <h2>Copyright2017@ Hashworks.co</h2>
+      </div>  
 </footer>
-
+<script src="../assets/js/jquery.serialize-object.min.js"></script>
 <script>
+// google sheet update
+  var $form = $('form#test-form'),
+    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+     
+    $('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject(),
+    success: function (data) {
+        }
+  })
+})
+
+// google sheet update end
+
     $("#open_popup1").click(function(){
-    $("#popup1").css("display", "flex");
-    $("#bgImg1").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-  $("#pop2").show();
-  $("#imga1").hide();
-  });
+        $("#popup1").css("display", "flex");
+        $("#bgImg1").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+        $("#pop2").show();
+        $("#imga1").hide();
+   });
 
- $("#close_popup1").click(function(){
-    $("#popup1").css("display", "none");
-  }); 
+    $("#close_popup1").click(function(){
+        $("#popup1").css("display", "none");
+      }); 
 
-$('body').click(function(e){
-if(e.target.style[0] == "display"){
-  $("#popup1").css("display","none");
-  $("#popup1").css("height","300px;");
-}
-});
+    $('body').click(function(e){
+        if(e.target.style[0] == "display"){
+        $("#popup1").css("display","none");
+        $("#popup1").css("height","300px;");
+    }
+    });
 
-function submitContact1(value) {
-if(value === 'success') {
-  $("#bgImg1").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-  $("#bgImg1").height("383px");
-  // $("#popup1").css("height","300px");
-  $("#pop2").hide();
-  $("#imga1").show();
-}
-}
+  function submitContact1(value) { 
+        if(value === 'success') {
+        $("#bgImg1").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+        $("#bgImg1").height("383px");
+        // $("#popup1").css("height","300px");
+        $("#pop2").hide();
+        $("#imga1").show();
+  }
+  }
 
 //2nd popup
-$("#open_popup0").click(function(){
-    $("#popup0").css("display", "flex");
-    $("#bgImg0").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-  $("#pop0").show();
-  $("#imga0").hide();
-  });
+  $("#open_popup0").click(function(){
+        $("#popup0").css("display", "flex");
+        $("#bgImg0").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+        $("#pop0").show();
+        $("#imga0").hide();
+    });
 
- $("#close_popup0").click(function(){
-    $("#popup0").css("display", "none");
-  }); 
+  $("#close_popup0").click(function(){
+       $("#popup0").css("display", "none");
+    }); 
 
 
-  $('body').click(function(e){
-if(e.target.style[0] == "display"){
-  $("#popup0").css("display","none");
-}
-});
+    $('body').click(function(e){
+        if(e.target.style[0] == "display"){
+        $("#popup0").css("display","none");
+   }
+   });
 
 function submitContact0(value) {
-if(value === 'success') {
-  $("#bgImg0").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-  $("#bgImg0").height("383px");
-  $("#pop0").hide();
-  $("#imga0").show();
-}
-}
-
-
+  if(value === 'success') {
+        $("#bgImg0").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+        $("#bgImg0").height("383px");
+        $("#pop0").hide();
+        $("#imga0").show();
+  }
+  }
 </script>
 </body>
-</html> 
+
+
+
+ 
