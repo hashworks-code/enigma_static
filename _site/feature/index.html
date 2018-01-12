@@ -35,7 +35,7 @@
             <form id="test-form5">
               <input type="text" name="name" placeholder="Name" id="name5" required>
               <input type="email" name="email" id="emailVal5" placeholder="Email" required>
-              <input type="text" name="phone" placeholder="Phone" id="phone5" required> 
+              <input type="number" name="phone" placeholder="Phone" id="phone5" required> 
               <textarea name="message" placeholder="Message"></textarea>
               <input type="submit" id="submit-form5" class="send" value="Send">
               <h1 id="errormsg5"></h1>
@@ -74,7 +74,7 @@
               <form id="test-form6">
                 <input type="text" name="name" placeholder="Name" id="name6" required>
                 <input type="email" name="email" id="emailVal6" placeholder="Email" required>
-                <input type="text" name="phone" placeholder="Phone" id="phone6" required> 
+                <input type="number" name="phone" placeholder="Phone" id="phone6" required> 
                 <textarea name="message" placeholder="Message"></textarea>
                 <input type="submit" id="submit-form6" class="send" value="Send">
                 <h1 id="errormsg6"></h1>
@@ -341,7 +341,7 @@
                        <form id="test-form">
                         <input type="text" name="name" placeholder="Name" id="name" required>
                         <input type="email" name="email" id="emailVal2" placeholder="Email" required>
-                        <input type="text" name="phone" placeholder="Phone" id="phone" required> 
+                        <input type="number" name="phone" placeholder="Phone" id="phone" required> 
                         <textarea name="message" placeholder="Message"></textarea>
                         <input type="submit" id="submit-form" class="send" value="Send">
                         <h1 id="errormsg"></h1>
@@ -388,9 +388,9 @@
           <div class="contact__close" id="close_popup0"><img  src="../assets/image/cross.svg"></div>
             <div class="contact__form" id="pop0">
               <form id="test-form2">
-                <input type="text" name="name" placeholder="Name" id="name2" required>
-                <input type="email" name="email" id="emailVal3" placeholder="Email" required>
-                <input type="text" name="phone" placeholder="Phone" id="phone3" required> 
+                <input type="text" name="name" placeholder="Name" id="name0" required>
+                <input type="email" name="email" id="emailVal0" placeholder="Email" required>
+                <input type="number" name="phone" placeholder="Phone" id="phone0" required> 
                 <textarea name="message" placeholder="Message"></textarea>
                 <input type="submit" id="submit-form0" class="send" value="Send">
                 <h1 id="errormsg1"></h1>
@@ -475,13 +475,13 @@
           url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
   
           $('#submit-form0').on('click', function(e) {
-              var email = $("#emailVal3").val();
+              var email = $("#emailVal0").val();
               var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-              if ($('#name1').val() == '') {
+              if ($('#name0').val() == '') {
                 document.getElementById("errormsg1").innerHTML="This is invalid name ";                  
               }else if(regex.test(email) === false){
                 document.getElementById("errormsg1").innerHTML="This is invalid email ";
-              }else if ($('#phone1').val() == '') {
+              }else if ($('#phone0').val() == '') {
                 document.getElementById("errormsg1").innerHTML="This is invalid phone ";
               }else{
                 var jqxhr = $.ajax({

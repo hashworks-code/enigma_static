@@ -35,6 +35,8 @@ body {
     padding: 0px; }
   body button {
     cursor: pointer; }
+  body input[type=number] {
+    -moz-appearance: textfield; }
   body #errormsg, body #errormsg1, body #errormsg5, body #errormsg6 {
     color: red;
     position: absolute;
