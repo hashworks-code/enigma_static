@@ -442,10 +442,8 @@ body {
   .clients .clients-info h5 {
     font-size: 2px;
     width: 12px;
-    position: absolute;
-    left: 4px;
-    top: 11px;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin: 5px 0px 0px -3px; }
 
 .clients .clients-info1 {
   padding: 7px;
@@ -466,10 +464,8 @@ body {
   .clients .clients-info1 h5 {
     font-size: 2px;
     width: 12px;
-    position: absolute;
-    left: 4px;
-    top: 11px;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin: 5px 0px 0px -3px; }
 
 .clients .clients-info3 {
   padding: 7px;
@@ -489,13 +485,11 @@ body {
   .clients .clients-info3 h5 {
     font-size: 2px;
     width: 12px;
-    position: absolute;
-    left: 4px;
-    top: 11px;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin: 5px 0px 0px -3px; }
 
 .clients .clients-info4 {
-  padding: 7px;
+  padding: 7px 4px 0px 6px;
   margin-bottom: 20px;
   width: 20px;
   height: 20px;
@@ -511,11 +505,9 @@ body {
     top: 4px; }
   .clients .clients-info4 h5 {
     font-size: 2px;
-    width: 62%;
-    position: absolute;
-    left: 4px;
-    top: 13px;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin: 6px 0px 0px -2px;
+    width: 12px; }
 
 .home .homeAlligment {
   width: 310px;
@@ -649,22 +641,15 @@ body {
       position: relative;
       right: 30px;
       top: 81px; }
-  .home__feature .featureimage {
-    padding: 10px 0px 0px 22px; }
   .home__feature h5 {
-    width: 64px;
     font-family: 'PTSansRegular';
     font-size: 10px;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.2;
     letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
-    position: absolute;
-    top: 52px;
-    left: 14px; }
+    color: #ffffff; }
 
 @media only screen and (min-width: 768px) {
   .home .homeAlligment {
