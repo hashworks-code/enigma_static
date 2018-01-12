@@ -22,25 +22,26 @@
             <a href="/feature" class="engima--home">Features</a>
             <!-- <a href="/blog" class="engima--home">Blogs</a> -->
          </div>
-            <button href="#popup" id="open_popup">Request for Demo</button>
+            <button href="#popup5" id="open_popup5">Request for Demo</button>
       </div>
            
 <!-- popup -->
-    <div id="popup" >
-      <div class="modal contact" id="bgImg">
-          <div class="contact__close" id="close_popup">
+    <div id="popup5" >
+      <div class="modal contact" id="bgImg5">
+          <div class="contact__close" id="close_popup5">
             <img  src="../assets/image/cross.svg">
           </div>
-          <div class="contact__form" id="pop1">
-            <form action="" id="test-form2">
-              <input type="text" name="name" placeholder="Name">
-              <input type="email"  name="email" placeholder="Email">
-              <input type="text" name="phone" placeholder="Phone">
+          <div class="contact__form" id="pop5">
+            <form id="test-form5">
+              <input type="text" name="name" placeholder="Name" id="name5" required>
+              <input type="email" name="email" id="emailVal5" placeholder="Email" required>
+              <input type="text" name="phone" placeholder="Phone" id="phone5" required> 
               <textarea name="message" placeholder="Message"></textarea>
-              <button class="send" id="submit-form2" type="button" onClick="submitContact('success')">Send</button>
+              <input type="submit" id="submit-form5" class="send" value="Send">
+              <h1 id="errormsg5"></h1>
             </form>
           </div>  
-          <div class="contact__thanku" id="imga">
+          <div class="contact__thanku" id="imga5">
               <h1>Thank you!</h1>
               <h2>We will get back to you.</h2>
           </div>
@@ -60,25 +61,26 @@
                 <div class="mobileHeader__close" id="close_view"><img src="../assets/image/cross.svg"></div> 
                  <a href="/feature"><h2>Features</h2></a>
                 <!-- <h2>Blogs</h2> -->
-                <button class="mobileHeader__request" href="#popup3" id="open_popup3" >Request for Demo</button>
+                <button class="mobileHeader__request" href="#popup6" id="open_popup6" >Request for Demo</button>
                 <a href="/index"><img class="" src="../assets/image/group.svg" alt="hashlogo"></a>
             </div>
           </div>
         </div>
              <!-- popup -->
-      <div  id="popup3">
-        <div class="modal contact" id="bgImg3">
-          <div class="contact__close" id="close_popup3"><img  src="../assets/image/cross.svg"></div>
-            <div class="contact__form" id="pop3">
-              <form action="" id="test-form3">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email"  name="email" placeholder="Email">
-                <input type="text" name="phone" placeholder="Phone">
+      <div  id="popup6">
+        <div class="modal contact" id="bgImg6">
+          <div class="contact__close" id="close_popup6"><img  src="../assets/image/cross.svg"></div>
+            <div class="contact__form" id="pop6">
+              <form id="test-form6">
+                <input type="text" name="name" placeholder="Name" id="name6" required>
+                <input type="email" name="email" id="emailVal6" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Phone" id="phone6" required> 
                 <textarea name="message" placeholder="Message"></textarea>
-                <button class="send" id="submit-form3" type="button" onClick="submitContact3('success')">Send</button>
+                <input type="submit" id="submit-form6" class="send" value="Send">
+                <h1 id="errormsg6"></h1>
               </form>
             </div>  
-            <div class="contact__thanku" id="imga3">
+            <div class="contact__thanku" id="imga6">
                 <h1>Thank you!</h1>
                 <h2>We will get back to you.</h2>
             </div>
@@ -87,68 +89,7 @@
  </header>
      <!-- <script type="text/javascript" src="/assets/js/head.js"></script> -->
      <script>
-
-// google sheet update
-var $form2 = $('form#test-form2'),
-    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
-     
-    $('#submit-form2').on('click', function(e) {
-    e.preventDefault();
-    var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form2.serializeObject(),
-    success: function (data) {
-        }
-  })
-})
-// end sheet
-
-// google sheet update
-var $form3 = $('form#test-form3'),
-    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
-     
-    $('#submit-form3').on('click', function(e) {
-    e.preventDefault();
-    var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form3.serializeObject(),
-    success: function (data) {
-        }
-  })
-})
-// end sheet
-
-   $("#open_popup").click(function(){
-        $("#popup").css("display", "flex");
-        $("#bgImg").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-        $("#pop1").show();
-        $("#imga").hide();
-    });
-      
-    $("#close_popup").click(function(){
-        $("#popup").css("display", "none");
-      }); 
-    
-    $('body').click(function(e){
-       if(e.target.style[0] == "display"){
-        $("#popup").css("display","none");
-      }
-    });
-
-function submitContact(value) {
-  if(value === 'success') {
-        $("#bgImg").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-        $("#bgImg").height("383px");
-        $("#pop1").hide();
-        $("#imga").show();
-  }
-}
-
-  $("#openMobile").click(function(){
+        $("#openMobile").click(function(){
        $("#mobileview").css("display", "flex");
     });
 
@@ -161,33 +102,125 @@ function submitContact(value) {
       $("#mobileview").css("display","none");
   }
   });
-//mob.header
-
-$("#open_popup3").click(function(){
-      $("#popup3").css("display", "flex");
-      $("#bgImg3").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
-      $("#pop3").show();
-      $("#imga3").hide();
-   }); 
-  $("#close_popup3").click(function(){
-      $("#popup3").css("display", "none");
-    }); 
+      //validation
+      $(document).ready(function() {
+              var $form5 = $('form#test-form5'),
+              url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+      
+              $('#submit-form5').on('click', function(e) {
+                  var email = $("#emailVal5").val();
+                  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                  if ($('#name5').val() == '') {
+                    document.getElementById("errormsg5").innerHTML="This is invalid name ";                  
+                  }else if(regex.test(email) === false){
+                    document.getElementById("errormsg5").innerHTML="This is invalid email ";
+                  }else if ($('#phone5').val() == '') {
+                    document.getElementById("errormsg5").innerHTML="This is invalid phone ";
+                  }else{
+                    var jqxhr = $.ajax({
+                          url: url,
+                          method: "GET",
+                          dataType: "json",
+                          data: $form5.serializeObject(),
+                          success: function() {
+                          }
+                      })
+                      submitContact5('success');
+                  }     
+                  e.preventDefault();
+              })
+          });
+      
+    // google sheet update end
     
-$('body').click(function(e){
-      if(e.target.style[0] == "display"){
-      $("#popup3").css("display","none");
-  }
-});
+        $("#open_popup5").click(function(){
+            $("#popup5").css("display", "flex");
+            $("#bgImg5").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+            $("#pop5").show();
+            $("#imga5").hide();
+       });
+       function submitContact5(value) { 
+            if(value === 'success') {
+            $("#bgImg5").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+            $("#bgImg5").height("383px");
+            // $("#popup1").css("height","300px");
+            $("#pop5").hide();
+            $("#imga5").show();
+      }
+      }
+    
+        $("#close_popup5").click(function(){
+            $("#popup5").css("display", "none");
+          }); 
+    
+        $('body').click(function(e){
+            if(e.target.style[0] == "display"){
+            $("#popup5").css("display","none");
+            $("#popup5").css("height","300px;");
+        }
+        });
+    </script>
 
-function submitContact3(value) {
-      if(value === 'success') {
-      $("#bgImg3").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-      $("#bgImg3").height("383px");
-      $("#pop3").hide();
-      $("#imga3").show();
-  }
-}
-     </script>
+    <!-- 2nd popup -->
+    <script>
+      //validation
+      $(document).ready(function() {
+              var $form6 = $('form#test-form6'),
+              url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+      
+              $('#submit-form6').on('click', function(e) {
+                  var email = $("#emailVal6").val();
+                  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                  if ($('#name6').val() == '') {
+                    document.getElementById("errormsg6").innerHTML="This is invalid name ";                  
+                  }else if(regex.test(email) === false){
+                    document.getElementById("errormsg6").innerHTML="This is invalid email ";
+                  }else if ($('#phone6').val() == '') {
+                    document.getElementById("errormsg6").innerHTML="This is invalid phone ";
+                  }else{
+                    var jqxhr = $.ajax({
+                          url: url,
+                          method: "GET",
+                          dataType: "json",
+                          data: $form6.serializeObject(),
+                          success: function() {
+                          }
+                      })
+                      submitContact6('success');
+                  }     
+                  e.preventDefault();
+              })
+          });
+      
+    // google sheet update end
+    
+        $("#open_popup6").click(function(){
+            $("#popup6").css("display", "flex");
+            $("#bgImg6").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
+            $("#pop6").show();
+            $("#imga6").hide();
+       });
+       function submitContact6(value) { 
+            if(value === 'success') {
+            $("#bgImg6").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+            $("#bgImg6").height("383px");
+            // $("#popup1").css("height","300px");
+            $("#pop6").hide();
+            $("#imga6").show();
+      }
+      }
+    
+        $("#close_popup6").click(function(){
+            $("#popup6").css("display", "none");
+          }); 
+    
+        $('body').click(function(e){
+            if(e.target.style[0] == "display"){
+            $("#popup6").css("display","none");
+            $("#popup6").css("height","300px;");
+        }
+        });
+    </script>
 
     </body>
 
@@ -207,14 +240,16 @@ function submitContact3(value) {
                      <div class="contact__close" id="close_popup1"><img  src="../assets/image/cross.svg"></div>
                       <div class="contact__form" id="pop2">
                        <form id="test-form">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="text" name="phone" placeholder="Phone">
+                        <input type="text" name="name" placeholder="Name" id="name" required>
+                        <input type="email" name="email" id="emailVal2" placeholder="Email" required>
+                        <input type="text" name="phone" placeholder="Phone" id="phone" required> 
                         <textarea name="message" placeholder="Message"></textarea>
-                        <button type="submit"id="submit-form" class="send" onClick="submitContact1('success')">Send</button>
+                        <input type="submit" id="submit-form" class="send" value="Send">
+                        <h1 id="errormsg"></h1>
                       </form>
-                      </div>  
-                      <div class="contact__thanku" id="imga1">
+                      </div> 
+                     
+                        <div class="contact__thanku" id="imga1">
                           <h1>Thank you!</h1>
                           <h2>We will get back to you.</h2>
                       </div>
@@ -248,17 +283,18 @@ function submitContact3(value) {
             </a>
         </div>
     </div>
-     <!--footer  popup -->
-      <div id="popup0" >
+       <!--footer  popup -->
+       <div id="popup0" >
         <div class="modal contact" id="bgImg0">
           <div class="contact__close" id="close_popup0"><img  src="../assets/image/cross.svg"></div>
             <div class="contact__form" id="pop0">
-               <form action="" id="test-form2">
-                  <input type="text" name="name" placeholder="Name">
-                  <input type="email" name="email" placeholder="Email">
-                  <input type="text" name="phone" placeholder="Phone">
-                  <textarea name="message" placeholder="Message"></textarea>
-                  <button type="submit" id="submit-form0" class="send"  onClick="submitContact0('success')">Send</button>
+              <form id="test-form2">
+                <input type="text" name="name" placeholder="Name" id="name2" required>
+                <input type="email" name="email" id="emailVal3" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Phone" id="phone3" required> 
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" id="submit-form0" class="send" value="Send">
+                <h1 id="errormsg1"></h1>
               </form>
             </div>  
             <div class="contact__thanku" id="imga0">
@@ -273,38 +309,37 @@ function submitContact3(value) {
       </div>  
 </footer>
 <script src="../assets/js/jquery.serialize-object.min.js"></script>
+
 <script>
-// google sheet update
-  var $form = $('form#test-form'),
-    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
-     
-    $('#submit-form').on('click', function(e) {
-    e.preventDefault();
-    var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject(),
-    success: function (data) {
-        }
-  })
-})
-
-var $form1 = $('form#test-form2'),
-    url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
-      
-$('#submit-form0').on('click', function(e) {
-    e.preventDefault();
-    var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form1.serializeObject(),
-    success: function () {
-        }
-  })
-})
-
+  //validation
+  $(document).ready(function() {
+          var $form = $('form#test-form'),
+          url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+  
+          $('#submit-form').on('click', function(e) {
+              var email = $("#emailVal2").val();
+              var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+              if ($('#name').val() == '') {
+                document.getElementById("errormsg").innerHTML="This is invalid name ";                  
+              }else if(regex.test(email) === false){
+                document.getElementById("errormsg").innerHTML="This is invalid email ";
+              }else if ($('#phone').val() == '') {
+                document.getElementById("errormsg").innerHTML="This is invalid phone ";
+              }else{
+                var jqxhr = $.ajax({
+                      url: url,
+                      method: "GET",
+                      dataType: "json",
+                      data: $form.serializeObject(),
+                      success: function() {
+                      }
+                  })
+                  submitContact1('success');
+              }     
+              e.preventDefault();
+          })
+      });
+  
 // google sheet update end
 
     $("#open_popup1").click(function(){
@@ -313,6 +348,15 @@ $('#submit-form0').on('click', function(e) {
         $("#pop2").show();
         $("#imga1").hide();
    });
+   function submitContact1(value) { 
+        if(value === 'success') {
+        $("#bgImg1").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
+        $("#bgImg1").height("383px");
+        // $("#popup1").css("height","300px");
+        $("#pop2").hide();
+        $("#imga1").show();
+  }
+  }
 
     $("#close_popup1").click(function(){
         $("#popup1").css("display", "none");
@@ -324,46 +368,69 @@ $('#submit-form0').on('click', function(e) {
         $("#popup1").css("height","300px;");
     }
     });
+</script>
+<script>
+  //validation
+  $(document).ready(function() {
+          var $form1 = $('form#test-form2'),
+          url ='https://script.google.com/macros/s/AKfycby3d1zVG8oEUMW3IMqlGU7hkP5a4aE_BB--DCB-9IZHAxk3jTEx/exec'
+  
+          $('#submit-form0').on('click', function(e) {
+              var email = $("#emailVal3").val();
+              var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+              if ($('#name1').val() == '') {
+                document.getElementById("errormsg1").innerHTML="This is invalid name ";                  
+              }else if(regex.test(email) === false){
+                document.getElementById("errormsg1").innerHTML="This is invalid email ";
+              }else if ($('#phone1').val() == '') {
+                document.getElementById("errormsg1").innerHTML="This is invalid phone ";
+              }else{
+                var jqxhr = $.ajax({
+                      url: url,
+                      method: "GET",
+                      dataType: "json",
+                      data: $form1.serializeObject(),
+                      success: function() {
+                      }
+                  })
+                  submitContact2('success');
+              }     
+              e.preventDefault();
+          })
+      });
+  
 
-  function submitContact1(value) { 
-        if(value === 'success') {
-        $("#bgImg1").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
-        $("#bgImg1").height("383px");
-        // $("#popup1").css("height","300px");
-        $("#pop2").hide();
-        $("#imga1").show();
-  }
-  }
+// google sheet update end
 
-//2nd popup
-  $("#open_popup0").click(function(){
+    $("#open_popup0").click(function(){
         $("#popup0").css("display", "flex");
         $("#bgImg0").css("background-image",'url(' + '../assets/image/popup.jpg' + ')');
         $("#pop0").show();
         $("#imga0").hide();
-    });
-
-  $("#close_popup0").click(function(){
-       $("#popup0").css("display", "none");
-    }); 
-
-
-    $('body').click(function(e){
-        if(e.target.style[0] == "display"){
-        $("#popup0").css("display","none");
-   }
    });
-
-function submitContact0(value) {
-  if(value === 'success') {
+   function submitContact2(value) { 
+        if(value === 'success') {
         $("#bgImg0").css("background-image",'url(' + '../assets/image/thanks.jpg' + ')');
         $("#bgImg0").height("383px");
+        // $("#popup1").css("height","300px");
         $("#pop0").hide();
         $("#imga0").show();
   }
   }
 
+    $("#close_popup0").click(function(){
+        $("#popup0").css("display", "none");
+      }); 
+
+    $('body').click(function(e){
+        if(e.target.style[0] == "display"){
+        $("#popup0").css("display","none");
+        $("#popup0").css("height","300px;");
+    }
+    });
 </script>
+
+
 </body>
 
 
